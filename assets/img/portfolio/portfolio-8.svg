@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" width="800" height="540">
+  <defs>
+    <linearGradient id="bg8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090e1c"/>
+      <stop offset="100%" stop-color="#0e1830"/>
+    </linearGradient>
+    <linearGradient id="blockGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(67,97,238,0.25)"/>
+      <stop offset="100%" stop-color="rgba(67,97,238,0.08)"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="540" fill="url(#bg8)"/>
+  <!-- Header -->
+  <rect x="24" y="18" width="752" height="50" rx="10" fill="rgba(255,255,255,0.06)"/>
+  <text x="50" y="48" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="white">Automated Audit Trail — Immutable Record Chain</text>
+  <rect x="572" y="30" width="110" height="22" rx="4" fill="rgba(6,214,160,0.2)" stroke="#06d6a0" stroke-width="1"/>
+  <text x="627" y="45" font-family="Arial,sans-serif" font-size="10" fill="#06d6a0" text-anchor="middle">✓ Chain Verified</text>
+  <rect x="692" y="30" width="64" height="22" rx="4" fill="#4361ee"/>
+  <text x="724" y="45" font-family="Arial,sans-serif" font-size="10" fill="white" text-anchor="middle">Export</text>
+  <!-- Audit chain blocks (horizontal) -->
+  <!-- Block 1 (Genesis) -->
+  <rect x="24" y="88" width="140" height="130" rx="8" fill="url(#blockGrad)" stroke="#4361ee" stroke-width="1.5"/>
+  <rect x="24" y="88" width="140" height="28" rx="8" fill="rgba(67,97,238,0.4)"/>
+  <text x="94" y="107" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white" text-anchor="middle">BLOCK #001</text>
+  <text x="94" y="122" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.4)" text-anchor="middle">Genesis Block</text>
+  <text x="34" y="140" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.4)">Hash:</text>
+  <text x="34" y="152" font-family="Arial,sans-serif" font-size="7" fill="#06d6a0" font-family="Courier New,monospace">a3f8d921e...</text>
+  <text x="34" y="164" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.4)">Prev: 000000</text>
+  <text x="34" y="178" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.4)">Event: Study Init</text>
+  <text x="34" y="190" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.35)">2024-01-10 09:00</text>
+  <circle cx="136" cy="154" r="6" fill="rgba(6,214,160,0.2)" stroke="#06d6a0" stroke-width="1"/>
+  <text x="136" y="158" font-family="Arial,sans-serif" font-size="8" fill="#06d6a0" text-anchor="middle">✓</text>
+  <!-- Chain link -->
+  <line x1="164" y1="153" x2="182" y2="153" stroke="rgba(67,97,238,0.6)" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="173" y="150" font-family="Arial,sans-serif" font-size="10" fill="#4361ee">⛓</text>
+  <!-- Block 2 -->
+  <rect x="182" y="88" width="140" height="130" rx="8" fill="url(#blockGrad)" stroke="#4361ee" stroke-width="1.5"/>
+  <rect x="182" y="88" width="140" height="28" rx="8" fill="rgba(67,97,238,0.35)"/>
+  <text x="252" y="107" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white" text-anchor="middle">BLOCK #002</text>
+  <text x="252" y="122" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.4)" text-anchor="middle">Data Entry</text>
+  <text x="192" y="140" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.4)">Hash:</text>
+  <text x="192" y="152" font-family="Arial,sans-serif" font-size="7" fill="#06d6a0">c7b2e453f...</text>
+  <text x="192" y="164" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.4)">Prev: a3f8d921</text>
+  <text x="192" y="178" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.4)">Event: CRF Entry</text>
+  <text x="192" y="190" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.35)">2024-02-14 11:32</text>
+  <circle cx="294" cy="154" r="6" fill="rgba(6,214,160,0.2)" stroke="#06d6a0" stroke-width="1"/>
+  <text x="294" y="158" font-family="Arial,sans-serif" font-size="8" fill="#06d6a0" text-anchor="middle">✓</text>
+  <!-- Chain link -->
+  <line x1="322" y1="153" x2="340" y2="153" stroke="rgba(67,97,238,0.6)" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="331" y="150" font-family="Arial,sans-serif" font-size="10" fill="#4361ee">⛓</text>
+  <!-- Block 3 -->
+  <rect x="340" y="88" width="140" height="130" rx="8" fill="url(#blockGrad)" stroke="#4361ee" stroke-width="1.5"/>
+  <rect x="340" y="88" width="140" height="28" rx="8" fill="rgba(67,97,238,0.35)"/>
+  <text x="410" y="107" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white" text-anchor="middle">BLOCK #003</text>
+  <text x="410" y="122" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.4)" text-anchor="middle">Audit Review</text>
+  <text x="350" y="140" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.4)">Hash:</text>
+  <text x="350" y="152" font-family="Arial,sans-serif" font-size="7" fill="#06d6a0">9e1fa8c2d...</text>
+  <text x="350" y="164" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.4)">Prev: c7b2e453</text>
+  <text x="350" y="178" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.4)">Event: QA Review</text>
+  <text x="350" y="190" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.35)">2024-03-05 14:18</text>
+  <circle cx="452" cy="154" r="6" fill="rgba(6,214,160,0.2)" stroke="#06d6a0" stroke-width="1"/>
+  <text x="452" y="158" font-family="Arial,sans-serif" font-size="8" fill="#06d6a0" text-anchor="middle">✓</text>
+  <!-- Chain link -->
+  <line x1="480" y1="153" x2="498" y2="153" stroke="rgba(67,97,238,0.6)" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="489" y="150" font-family="Arial,sans-serif" font-size="10" fill="#4361ee">⛓</text>
+  <!-- Block 4 (Current/Active) -->
+  <rect x="498" y="88" width="140" height="130" rx="8" fill="rgba(6,214,160,0.08)" stroke="#06d6a0" stroke-width="2"/>
+  <rect x="498" y="88" width="140" height="28" rx="8" fill="rgba(6,214,160,0.35)"/>
+  <text x="568" y="107" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white" text-anchor="middle">BLOCK #004</text>
+  <text x="568" y="122" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.7)" text-anchor="middle">Current ● Live</text>
+  <text x="508" y="140" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.4)">Hash:</text>
+  <text x="508" y="152" font-family="Arial,sans-serif" font-size="7" fill="#06d6a0">3d7ac901b...</text>
+  <text x="508" y="164" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.4)">Prev: 9e1fa8c2</text>
+  <text x="508" y="178" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.4)">Event: DBL Sig</text>
+  <text x="508" y="190" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.35)">2024-03-07 16:45</text>
+  <circle cx="610" cy="154" r="7" fill="rgba(6,214,160,0.3)" stroke="#06d6a0" stroke-width="1.5"/>
+  <text x="610" y="158" font-family="Arial,sans-serif" font-size="9" fill="#06d6a0" text-anchor="middle">✓</text>
+  <!-- Chain pending -->
+  <line x1="638" y1="153" x2="656" y2="153" stroke="rgba(255,255,255,0.15)" stroke-width="2" stroke-dasharray="3 3"/>
+  <!-- Block 5 (Pending) -->
+  <rect x="656" y="88" width="118" height="130" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="715" y="120" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.25)" text-anchor="middle">BLOCK #005</text>
+  <text x="715" y="138" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.2)" text-anchor="middle">Pending...</text>
+  <text x="715" y="160" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.15)" text-anchor="middle">Awaiting</text>
+  <text x="715" y="172" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.15)" text-anchor="middle">Final Sign</text>
+  <!-- Audit event log table -->
+  <rect x="24" y="240" width="752" height="180" rx="8" fill="rgba(255,255,255,0.04)"/>
+  <text x="44" y="266" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="rgba(255,255,255,0.85)">Audit Event Log</text>
+  <!-- Table header -->
+  <rect x="36" y="274" width="728" height="24" rx="4" fill="rgba(67,97,238,0.15)"/>
+  <text x="52" y="289" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.5)">Timestamp</text>
+  <text x="180" y="289" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.5)">User</text>
+  <text x="300" y="289" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.5)">Action</text>
+  <text x="480" y="289" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.5)">Hash Fragment</text>
+  <text x="620" y="289" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.5)">Status</text>
+  <text x="700" y="289" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.5)">Block</text>
+  <!-- Rows -->
+  <line x1="36" y1="300" x2="764" y2="300" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="52" y="315" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.55)">2024-03-07 16:45:02</text>
+  <text x="180" y="315" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.55)">j.smith@pharma</text>
+  <text x="300" y="315" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.55)">Database Lock — Final</text>
+  <text x="480" y="315" font-family="Arial,sans-serif" font-size="9" fill="#06d6a0">3d7ac901b...</text>
+  <text x="620" y="315" font-family="Arial,sans-serif" font-size="9" fill="#06d6a0">✓ Verified</text>
+  <text x="700" y="315" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.4)">#004</text>
+  <line x1="36" y1="322" x2="764" y2="322" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="52" y="337" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.55)">2024-03-05 14:18:30</text>
+  <text x="180" y="337" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.55)">qa.lead@pharma</text>
+  <text x="300" y="337" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.55)">Quality Review — Approved</text>
+  <text x="480" y="337" font-family="Arial,sans-serif" font-size="9" fill="#06d6a0">9e1fa8c2d...</text>
+  <text x="620" y="337" font-family="Arial,sans-serif" font-size="9" fill="#06d6a0">✓ Verified</text>
+  <text x="700" y="337" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.4)">#003</text>
+  <line x1="36" y1="344" x2="764" y2="344" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="52" y="359" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.55)">2024-02-14 11:32:18</text>
+  <text x="180" y="359" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.55)">r.jones@cro</text>
+  <text x="300" y="359" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.55)">CRF Data Entry — Saved</text>
+  <text x="480" y="359" font-family="Arial,sans-serif" font-size="9" fill="#06d6a0">c7b2e453f...</text>
+  <text x="620" y="359" font-family="Arial,sans-serif" font-size="9" fill="#06d6a0">✓ Verified</text>
+  <text x="700" y="359" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.4)">#002</text>
+  <line x1="36" y1="366" x2="764" y2="366" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="52" y="381" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.55)">2024-01-10 09:00:00</text>
+  <text x="180" y="381" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.55)">system@arq</text>
+  <text x="300" y="381" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.55)">Study Initialized — Genesis</text>
+  <text x="480" y="381" font-family="Arial,sans-serif" font-size="9" fill="#06d6a0">a3f8d921e...</text>
+  <text x="620" y="381" font-family="Arial,sans-serif" font-size="9" fill="#06d6a0">✓ Verified</text>
+  <text x="700" y="381" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.4)">#001</text>
+  <line x1="36" y1="388" x2="764" y2="388" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="52" y="406" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.25)">... 1,246 more events in chain</text>
+  <!-- Stats bar -->
+  <rect x="24" y="440" width="752" height="78" rx="8" fill="rgba(255,255,255,0.04)"/>
+  <text x="44" y="466" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="rgba(255,255,255,0.7)">Chain Integrity</text>
+  <rect x="44" y="474" width="690" height="8" rx="4" fill="rgba(255,255,255,0.1)"/>
+  <rect x="44" y="474" width="688" height="8" rx="4" fill="#06d6a0"/>
+  <text x="740" y="482" font-family="Arial,sans-serif" font-size="9" fill="#06d6a0">100%</text>
+  <text x="44" y="498" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.35)">1,250 events | 4 blocks | 21 CFR Part 11 compliant | Zero tampering detected</text>
+</svg>

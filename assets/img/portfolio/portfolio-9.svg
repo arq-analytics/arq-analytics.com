@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" width="800" height="540">
+  <defs>
+    <linearGradient id="bg9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08101c"/>
+      <stop offset="100%" stop-color="#0d1a2c"/>
+    </linearGradient>
+    <linearGradient id="lineGrad9" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4361ee"/>
+      <stop offset="50%" stop-color="#06d6a0"/>
+      <stop offset="100%" stop-color="#4361ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="540" fill="url(#bg9)"/>
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="0" y1="135" x2="800" y2="135"/><line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="405" x2="800" y2="405"/><line x1="200" y1="0" x2="200" y2="540"/>
+    <line x1="400" y1="0" x2="400" y2="540"/><line x1="600" y1="0" x2="600" y2="540"/>
+  </g>
+  <!-- Header -->
+  <rect x="24" y="18" width="752" height="50" rx="10" fill="rgba(255,255,255,0.06)"/>
+  <text x="50" y="48" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="white">Real-Time Operations Monitor</text>
+  <circle cx="540" cy="43" r="5" fill="#06d6a0"/>
+  <text x="550" y="47" font-family="Arial,sans-serif" font-size="10" fill="#06d6a0">LIVE</text>
+  <rect x="582" y="30" width="80" height="22" rx="4" fill="rgba(255,255,255,0.08)"/>
+  <text x="622" y="45" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.6)" text-anchor="middle">Last 1h</text>
+  <rect x="672" y="30" width="84" height="22" rx="4" fill="#4361ee"/>
+  <text x="714" y="45" font-family="Arial,sans-serif" font-size="10" fill="white" text-anchor="middle">Alert Config</text>
+  <!-- Status cards row -->
+  <rect x="24" y="88" width="110" height="72" rx="8" fill="rgba(6,214,160,0.08)" stroke="rgba(6,214,160,0.3)" stroke-width="1"/>
+  <circle cx="44" cy="106" r="5" fill="#06d6a0"/>
+  <text x="54" y="110" font-family="Arial,sans-serif" font-size="8" fill="#06d6a0">Operational</text>
+  <text x="36" y="134" font-family="Arial,sans-serif" font-size="22" font-weight="bold" fill="white">24/7</text>
+  <text x="36" y="150" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.35)">Uptime</text>
+
+  <rect x="148" y="88" width="110" height="72" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="164" y="110" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.4)">Response Time</text>
+  <text x="164" y="134" font-family="Arial,sans-serif" font-size="22" font-weight="bold" fill="white">142<tspan font-size="11">ms</tspan></text>
+  <text x="164" y="150" font-family="Arial,sans-serif" font-size="8" fill="#06d6a0">▲ Fast</text>
+
+  <rect x="272" y="88" width="110" height="72" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="288" y="110" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.4)">Throughput</text>
+  <text x="288" y="134" font-family="Arial,sans-serif" font-size="22" font-weight="bold" fill="white">48k<tspan font-size="11">/s</tspan></text>
+  <text x="288" y="150" font-family="Arial,sans-serif" font-size="8" fill="#06d6a0">Peak capacity</text>
+
+  <rect x="396" y="88" width="110" height="72" rx="8" fill="rgba(245,158,11,0.08)" stroke="rgba(245,158,11,0.25)" stroke-width="1"/>
+  <circle cx="416" cy="106" r="5" fill="#f59e0b"/>
+  <text x="428" y="110" font-family="Arial,sans-serif" font-size="8" fill="#f59e0b">1 Warning</text>
+  <text x="412" y="134" font-family="Arial,sans-serif" font-size="22" font-weight="bold" fill="white">2</text>
+  <text x="412" y="150" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.35)">Active Alerts</text>
+
+  <rect x="520" y="88" width="110" height="72" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="536" y="110" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.4)">CPU Usage</text>
+  <text x="536" y="134" font-family="Arial,sans-serif" font-size="22" font-weight="bold" fill="white">34%</text>
+  <text x="536" y="150" font-family="Arial,sans-serif" font-size="8" fill="#06d6a0">Healthy</text>
+
+  <rect x="644" y="88" width="132" height="72" rx="8" fill="rgba(67,97,238,0.12)" stroke="#4361ee" stroke-width="1"/>
+  <text x="660" y="110" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.4)">SLA</text>
+  <text x="660" y="134" font-family="Arial,sans-serif" font-size="22" font-weight="bold" fill="#4361ee">99.97%</text>
+  <text x="660" y="150" font-family="Arial,sans-serif" font-size="8" fill="#06d6a0">✓ Compliant</text>
+
+  <!-- Main time series chart -->
+  <rect x="24" y="178" width="540" height="218" rx="8" fill="rgba(255,255,255,0.03)"/>
+  <text x="44" y="204" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="rgba(255,255,255,0.85)">System Metrics — Real Time</text>
+  <!-- Y axis -->
+  <text x="38" y="232" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.25)" text-anchor="end">100</text>
+  <text x="38" y="272" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.25)" text-anchor="end">75</text>
+  <text x="38" y="312" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.25)" text-anchor="end">50</text>
+  <text x="38" y="352" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.25)" text-anchor="end">25</text>
+  <!-- Grid lines -->
+  <line x1="44" y1="229" x2="550" y2="229" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="44" y1="269" x2="550" y2="269" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="44" y1="309" x2="550" y2="309" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="44" y1="349" x2="550" y2="349" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <!-- CPU line (animated feel with varied data) -->
+  <polyline points="50,330 70,322 90,318 110,325 130,315 150,308 170,320 190,312 210,300 230,310 250,305 270,308 290,295 310,302 330,298 350,290 370,300 390,288 410,295 420,310 430,320 450,318 470,310 490,308 510,302 530,308 548,305"
+            fill="none" stroke="#4361ee" stroke-width="2" stroke-linejoin="round"/>
+  <!-- CPU area fill -->
+  <path d="M50,330 70,322 90,318 110,325 130,315 150,308 170,320 190,312 210,300 230,310 250,305 270,308 290,295 310,302 330,298 350,290 370,300 390,288 410,295 420,310 430,320 450,318 470,310 490,308 510,302 530,308 548,305 L548,385 L50,385 Z"
+        fill="rgba(67,97,238,0.08)"/>
+  <!-- Memory line -->
+  <polyline points="50,280 70,278 90,275 110,272 130,270 150,268 170,265 190,262 210,258 230,255 250,252 270,250 290,248 310,245 330,242 350,240 370,238 390,235 410,232 430,235 450,238 470,242 490,246 510,250 530,255 548,260"
+            fill="none" stroke="#06d6a0" stroke-width="1.8" stroke-dasharray="6 3" stroke-linejoin="round"/>
+  <!-- Network I/O line -->
+  <polyline points="50,350 70,345 90,340 110,348 130,338 150,330 170,342 190,335 210,328 230,340 250,332 270,338 290,325 310,335 330,330 350,320 370,332 390,318 410,328 420,342 430,355 450,348 470,338 490,335 510,328 530,335 548,332"
+            fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="3 3"/>
+  <!-- Alert spike marker -->
+  <line x1="420" y1="229" x2="420" y2="380" stroke="rgba(239,68,68,0.4)" stroke-width="1" stroke-dasharray="4 4"/>
+  <rect x="400" y="226" width="52" height="14" rx="3" fill="rgba(239,68,68,0.2)"/>
+  <text x="426" y="236" font-family="Arial,sans-serif" font-size="7" fill="#ef4444" text-anchor="middle">CPU spike</text>
+  <!-- X axis labels (time) -->
+  <text x="50" y="380" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.25)" text-anchor="middle">:00</text>
+  <text x="140" y="380" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.25)" text-anchor="middle">:10</text>
+  <text x="230" y="380" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.25)" text-anchor="middle">:20</text>
+  <text x="320" y="380" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.25)" text-anchor="middle">:30</text>
+  <text x="410" y="380" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.25)" text-anchor="middle">:40</text>
+  <text x="500" y="380" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.25)" text-anchor="middle">:50</text>
+  <!-- Legend -->
+  <line x1="44" y1="396" x2="60" y2="396" stroke="#4361ee" stroke-width="2"/>
+  <text x="64" y="400" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.45)">CPU</text>
+  <line x1="104" y1="396" x2="120" y2="396" stroke="#06d6a0" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="124" y="400" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.45)">Memory</text>
+  <line x1="184" y1="396" x2="200" y2="396" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="204" y="400" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.45)">Network I/O</text>
+  <!-- Right: Service health -->
+  <rect x="578" y="178" width="198" height="218" rx="8" fill="rgba(255,255,255,0.04)"/>
+  <text x="598" y="204" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="rgba(255,255,255,0.85)">Service Health</text>
+  <!-- Services -->
+  <rect x="590" y="212" width="174" height="30" rx="5" fill="rgba(6,214,160,0.08)"/>
+  <circle cx="606" cy="227" r="5" fill="#06d6a0"/>
+  <text x="618" y="231" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.75)">API Gateway</text>
+  <text x="752" y="231" font-family="Arial,sans-serif" font-size="8" fill="#06d6a0" text-anchor="end">99.9%</text>
+  <rect x="590" y="248" width="174" height="30" rx="5" fill="rgba(6,214,160,0.08)"/>
+  <circle cx="606" cy="263" r="5" fill="#06d6a0"/>
+  <text x="618" y="267" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.75)">Data Pipeline</text>
+  <text x="752" y="267" font-family="Arial,sans-serif" font-size="8" fill="#06d6a0" text-anchor="end">100%</text>
+  <rect x="590" y="284" width="174" height="30" rx="5" fill="rgba(245,158,11,0.08)"/>
+  <circle cx="606" cy="299" r="5" fill="#f59e0b"/>
+  <text x="618" y="303" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.75)">ML Inference</text>
+  <text x="752" y="303" font-family="Arial,sans-serif" font-size="8" fill="#f59e0b" text-anchor="end">97.2%</text>
+  <rect x="590" y="320" width="174" height="30" rx="5" fill="rgba(6,214,160,0.08)"/>
+  <circle cx="606" cy="335" r="5" fill="#06d6a0"/>
+  <text x="618" y="339" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.75)">Audit Logger</text>
+  <text x="752" y="339" font-family="Arial,sans-serif" font-size="8" fill="#06d6a0" text-anchor="end">100%</text>
+  <rect x="590" y="356" width="174" height="30" rx="5" fill="rgba(6,214,160,0.08)"/>
+  <circle cx="606" cy="371" r="5" fill="#06d6a0"/>
+  <text x="618" y="375" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.75)">Notification Svc</text>
+  <text x="752" y="375" font-family="Arial,sans-serif" font-size="8" fill="#06d6a0" text-anchor="end">99.8%</text>
+  <!-- Alert log -->
+  <rect x="24" y="410" width="752" height="108" rx="8" fill="rgba(255,255,255,0.04)"/>
+  <text x="44" y="436" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="rgba(255,255,255,0.85)">Live Event Log</text>
+  <circle cx="44" cy="436" r="4" fill="#06d6a0"/>
+  <text x="44" y="436" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="rgba(255,255,255,0.85)">   Live Event Log</text>
+  <rect x="36" y="443" width="728" height="22" rx="4" fill="rgba(245,158,11,0.08)"/>
+  <circle cx="52" cy="454" r="4" fill="#f59e0b"/>
+  <text x="62" y="458" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.65)">16:41:22 — WARN — ML Inference latency spike (340ms) — Auto-scaled replicas</text>
+  <rect x="36" y="469" width="728" height="22" rx="4" fill="rgba(255,255,255,0.03)"/>
+  <circle cx="52" cy="480" r="4" fill="#06d6a0"/>
+  <text x="62" y="484" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.55)">16:40:05 — INFO — Data pipeline batch #1284 completed — 48,320 records processed</text>
+  <rect x="36" y="495" width="728" height="22" rx="4" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="52" cy="506" r="4" fill="#4361ee"/>
+  <text x="62" y="510" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.45)">16:39:18 — DEBUG — Audit log sync complete — Chain integrity verified 100%</text>
+</svg>
