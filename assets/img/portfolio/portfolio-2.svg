@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" width="800" height="540">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#142038"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="540" fill="url(#bg2)"/>
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="0" y1="135" x2="800" y2="135"/><line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="405" x2="800" y2="405"/><line x1="200" y1="0" x2="200" y2="540"/>
+    <line x1="400" y1="0" x2="400" y2="540"/><line x1="600" y1="0" x2="600" y2="540"/>
+  </g>
+  <!-- Header -->
+  <rect x="24" y="20" width="752" height="52" rx="10" fill="rgba(255,255,255,0.06)"/>
+  <text x="50" y="51" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="white">Regulatory Reporting Dashboard</text>
+  <rect x="590" y="34" width="80" height="24" rx="4" fill="rgba(6,214,160,0.2)" stroke="#06d6a0" stroke-width="1"/>
+  <text x="630" y="50" font-family="Arial,sans-serif" font-size="10" fill="#06d6a0" text-anchor="middle">✓ Compliant</text>
+  <rect x="680" y="34" width="76" height="24" rx="4" fill="#4361ee"/>
+  <text x="718" y="50" font-family="Arial,sans-serif" font-size="10" fill="white" text-anchor="middle">Generate PDF</text>
+  <!-- Compliance gauge section -->
+  <rect x="24" y="90" width="280" height="310" rx="10" fill="rgba(255,255,255,0.04)"/>
+  <text x="44" y="118" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="rgba(255,255,255,0.85)">Compliance Score</text>
+  <!-- Gauge arc -->
+  <circle cx="164" cy="240" r="90" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="18" stroke-dasharray="283" stroke-dashoffset="0" transform="rotate(135 164 240)"/>
+  <circle cx="164" cy="240" r="90" fill="none" stroke="url(#gaugeGrad)" stroke-width="18" stroke-dasharray="260 283" stroke-dashoffset="0" transform="rotate(135 164 240)" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="gaugeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4361ee"/>
+      <stop offset="100%" stop-color="#06d6a0"/>
+    </linearGradient>
+  </defs>
+  <text x="164" y="235" font-family="Arial,sans-serif" font-size="38" font-weight="bold" fill="white" text-anchor="middle">94%</text>
+  <text x="164" y="258" font-family="Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.45)" text-anchor="middle">Overall Score</text>
+  <text x="84" y="310" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)">0%</text>
+  <text x="234" y="310" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)">100%</text>
+  <!-- Score breakdown -->
+  <text x="44" y="340" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.45)">FDA 21 CFR Part 11</text>
+  <rect x="44" y="346" width="220" height="5" rx="2" fill="rgba(255,255,255,0.1)"/>
+  <rect x="44" y="346" width="209" height="5" rx="2" fill="#06d6a0"/>
+  <text x="272" y="352" font-family="Arial,sans-serif" font-size="8" fill="#06d6a0">95%</text>
+  <text x="44" y="368" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.45)">ICH E6 GCP</text>
+  <rect x="44" y="374" width="220" height="5" rx="2" fill="rgba(255,255,255,0.1)"/>
+  <rect x="44" y="374" width="198" height="5" rx="2" fill="#4361ee"/>
+  <text x="272" y="380" font-family="Arial,sans-serif" font-size="8" fill="#4361ee">90%</text>
+  <text x="44" y="396" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.45)">GDPR</text>
+  <rect x="44" y="402" width="220" height="5" rx="2" fill="rgba(255,255,255,0.1)"/>
+  <rect x="44" y="402" width="216" height="5" rx="2" fill="#06d6a0"/>
+  <text x="272" y="408" font-family="Arial,sans-serif" font-size="8" fill="#06d6a0">98%</text>
+  <!-- Regulatory checklist -->
+  <rect x="318" y="90" width="458" height="200" rx="10" fill="rgba(255,255,255,0.04)"/>
+  <text x="338" y="118" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="rgba(255,255,255,0.85)">Regulatory Checklist</text>
+  <!-- Items -->
+  <rect x="338" y="130" width="418" height="36" rx="6" fill="rgba(6,214,160,0.08)" stroke="rgba(6,214,160,0.25)" stroke-width="1"/>
+  <text x="364" y="153" font-family="Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.8)">Audit Trail Documentation</text>
+  <text x="720" y="153" font-family="Arial,sans-serif" font-size="11" fill="#06d6a0" text-anchor="middle">✓</text>
+  <rect x="338" y="173" width="418" height="36" rx="6" fill="rgba(6,214,160,0.08)" stroke="rgba(6,214,160,0.25)" stroke-width="1"/>
+  <text x="364" y="196" font-family="Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.8)">Electronic Signature Controls</text>
+  <text x="720" y="196" font-family="Arial,sans-serif" font-size="11" fill="#06d6a0" text-anchor="middle">✓</text>
+  <rect x="338" y="216" width="418" height="36" rx="6" fill="rgba(6,214,160,0.08)" stroke="rgba(6,214,160,0.25)" stroke-width="1"/>
+  <text x="364" y="239" font-family="Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.8)">Data Integrity Validation</text>
+  <text x="720" y="239" font-family="Arial,sans-serif" font-size="11" fill="#06d6a0" text-anchor="middle">✓</text>
+  <rect x="338" y="259" width="418" height="36" rx="6" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+  <text x="364" y="282" font-family="Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.8)">Change Control Procedures</text>
+  <text x="720" y="282" font-family="Arial,sans-serif" font-size="11" fill="#f59e0b" text-anchor="middle">⚠</text>
+  <!-- Audit timeline -->
+  <rect x="318" y="302" width="458" height="98" rx="10" fill="rgba(255,255,255,0.04)"/>
+  <text x="338" y="328" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="rgba(255,255,255,0.85)">Audit Events Timeline</text>
+  <line x1="338" y1="345" x2="756" y2="345" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <!-- Timeline dots -->
+  <circle cx="370" cy="345" r="6" fill="#4361ee"/>
+  <circle cx="470" cy="345" r="6" fill="#06d6a0"/>
+  <circle cx="560" cy="345" r="6" fill="#4361ee"/>
+  <circle cx="660" cy="345" r="6" fill="#f59e0b"/>
+  <circle cx="740" cy="345" r="6" fill="#06d6a0"/>
+  <text x="370" y="365" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.4)" text-anchor="middle">Baseline</text>
+  <text x="470" y="365" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.4)" text-anchor="middle">Q1 Review</text>
+  <text x="560" y="365" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.4)" text-anchor="middle">Mid-Audit</text>
+  <text x="660" y="365" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.4)" text-anchor="middle">CAP Filed</text>
+  <text x="740" y="365" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.4)" text-anchor="middle">Closed</text>
+  <!-- Recent reports -->
+  <rect x="24" y="416" width="752" height="100" rx="10" fill="rgba(255,255,255,0.04)"/>
+  <text x="44" y="444" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="rgba(255,255,255,0.85)">Recent Reports</text>
+  <rect x="44" y="454" width="165" height="48" rx="6" fill="rgba(67,97,238,0.15)" stroke="rgba(67,97,238,0.4)" stroke-width="1"/>
+  <text x="127" y="476" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.7)" text-anchor="middle">Annual Audit 2024</text>
+  <text x="127" y="492" font-family="Arial,sans-serif" font-size="9" fill="#4361ee" text-anchor="middle">PDF • 2.4 MB</text>
+  <rect x="224" y="454" width="165" height="48" rx="6" fill="rgba(6,214,160,0.1)" stroke="rgba(6,214,160,0.3)" stroke-width="1"/>
+  <text x="307" y="476" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.7)" text-anchor="middle">Q3 Compliance Report</text>
+  <text x="307" y="492" font-family="Arial,sans-serif" font-size="9" fill="#06d6a0" text-anchor="middle">PDF • 1.8 MB</text>
+  <rect x="404" y="454" width="165" height="48" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="487" y="476" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.7)" text-anchor="middle">Risk Assessment Matrix</text>
+  <text x="487" y="492" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.35)" text-anchor="middle">XLSX • 890 KB</text>
+</svg>
