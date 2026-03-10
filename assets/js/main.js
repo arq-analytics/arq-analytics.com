@@ -242,4 +242,50 @@
     });
   });
 
+  /**
+   * Progressive reveal for cards and content blocks
+   */
+  window.addEventListener('load', () => {
+    const revealItems = select('.reveal-up', true);
+    if (!revealItems.length) return;
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.18,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealItems.forEach((item) => revealObserver.observe(item));
+  });
+
+  /**
+   * Subtle pointer-driven hero parallax
+   */
+  (() => {
+    const panel = select('.hero-panel');
+    if (!panel || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+
+    on('mousemove', '#hero', (event) => {
+      const rect = panel.getBoundingClientRect();
+      const x = (event.clientX - rect.left) / rect.width;
+      const y = (event.clientY - rect.top) / rect.height;
+
+      const rotateY = clamp((x - 0.5) * 8, -6, 6);
+      const rotateX = clamp((0.5 - y) * 8, -6, 6);
+      panel.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+
+    on('mouseleave', '#hero', () => {
+      panel.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+    });
+  })();
+
 })()
