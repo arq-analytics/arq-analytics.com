@@ -288,4 +288,47 @@
     });
   })();
 
+  /**
+   * Top scroll progress indicator
+   */
+  (() => {
+    const progressBar = select('.scroll-progress');
+    if (!progressBar) return;
+
+    const updateProgress = () => {
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      const ratio = maxScroll > 0 ? (window.scrollY / maxScroll) : 0;
+      progressBar.style.width = `${Math.min(Math.max(ratio, 0), 1) * 100}%`;
+    };
+
+    window.addEventListener('load', updateProgress);
+    onscroll(document, updateProgress);
+  })();
+
+  /**
+   * Lightweight card tilt for premium motion feel
+   */
+  (() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const cards = select('.portfolio .portfolio-wrap, .playbook-card', true);
+    if (!cards.length) return;
+
+    cards.forEach((card) => {
+      card.addEventListener('mousemove', (event) => {
+        const rect = card.getBoundingClientRect();
+        const x = (event.clientX - rect.left) / rect.width;
+        const y = (event.clientY - rect.top) / rect.height;
+        const rotateY = (x - 0.5) * 6;
+        const rotateX = (0.5 - y) * 6;
+        card.classList.add('is-tilting');
+        card.style.transform = `perspective(900px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-6px)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+        card.classList.remove('is-tilting');
+      });
+    });
+  })();
+
 })()
