@@ -5,20 +5,17 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>ARQ Analytics | Portfolio Details</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>ARQ Analytics | AI Portfolio Spotlight</title>
+  <meta content="Explore an AI-first portfolio build from ARQ Analytics featuring RAG, agent orchestration, workflow automation, and observability-led delivery." name="description">
+  <meta content="AI portfolio, RAG copilot, AI agents, workflow automation, LangChain style design, ARQ Analytics" name="keywords">
 
-  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
     rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -26,29 +23,17 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/arq-theme.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Ninestars
-  * Updated: Jul 27 2023 with Bootstrap v5.3.1
-  * Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
-<body>
+<body class="portfolio-details-page">
+  <div class="scroll-progress" aria-hidden="true"></div>
 
-  <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
-
       <div class="logo">
         <h1><a href="index.html"><span>ARQ</span> Analytics</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav id="navbar" class="navbar">
@@ -56,98 +41,230 @@
           <li><a class="nav-link" href="index.html#hero">Home</a></li>
           <li><a class="nav-link" href="index.html#about">About</a></li>
           <li><a class="nav-link" href="index.html#services">Services</a></li>
-          <li><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
-          <li><a class="nav-link" href="index.html#faq">FAQ</a></li>
+          <li><a class="nav-link" href="index.html#flow">Flow</a></li>
+          <li><a class="nav-link" href="index.html#playbooks">Playbooks</a></li>
+          <li><a class="nav-link active" href="index.html#portfolio">Examples</a></li>
           <li><a class="nav-link" href="index.html#contact">Contact</a></li>
-          <li><a class="getstarted" href="index.html#about">Get Started</a></li>
+          <li><a class="getstarted" href="index.html#contact">Start a Project</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+      </nav>
     </div>
-  </header><!-- End Header -->
+  </header>
 
   <main id="main">
-
-    <!-- ======= Breadcrumbs Section ======= -->
-    <section class="breadcrumbs">
+    <section class="breadcrumbs ai-breadcrumbs">
       <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfolio Details</h2>
-          <ol>
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+          <div>
+            <span class="crumb-badge" data-aos="fade-right">Portfolio Spotlight</span>
+            <h2 data-aos="fade-up" data-aos-delay="50">Policy Knowledge RAG Copilot</h2>
+          </div>
+          <ol data-aos="fade-left">
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#portfolio">Portfolio</a></li>
-            <li>Portfolio Details</li>
+            <li><a href="index.html#portfolio">Examples</a></li>
+            <li>AI Portfolio Details</li>
           </ol>
         </div>
-
       </div>
-    </section><!-- Breadcrumbs Section -->
+    </section>
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
+    <section id="portfolio-details" class="portfolio-details ai-portfolio-showcase">
       <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-7">
+            <div class="ai-case-intro reveal-up" data-aos="fade-up">
+              <span class="ai-kicker"><i class="bi bi-stars"></i> LangChain-inspired AI product experience</span>
+              <h1>A high-trust AI assistant combining retrieval, agent tools, and workflow control.</h1>
+              <p>
+                This build transforms static policy documentation into an interactive AI system that can answer,
+                reason, route actions, and escalate safely. Every response is retrieval-grounded and designed for
+                enterprise reliability.
+              </p>
+              <div class="ai-chip-row">
+                <span><i class="bi bi-journal-text"></i> Retrieval-grounded outputs</span>
+                <span><i class="bi bi-diagram-3"></i> Multi-agent orchestration</span>
+                <span><i class="bi bi-shield-check"></i> Guardrails + approvals</span>
+                <span><i class="bi bi-graph-up-arrow"></i> Traceable performance</span>
+              </div>
+              <div class="ai-cta-row">
+                <a href="index.html#contact" class="btn-get-started">Build Similar AI System</a>
+                <a href="index.html#portfolio" class="btn-secondary-cta">See More AI Examples</a>
+              </div>
+            </div>
 
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
+            <div class="portfolio-details-slider swiper ai-showcase-slider reveal-up" data-aos="zoom-in" data-aos-delay="150">
               <div class="swiper-wrapper align-items-center">
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.jpg" alt="">
+                  <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="AI copilot interface and knowledge panel">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-2.jpg" alt="">
+                  <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="Agentic workflow with task routing and validation">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-3.jpg" alt="">
+                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="Observability dashboard for AI response quality">
                 </div>
-
               </div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
 
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
+          <div class="col-lg-5">
+            <div class="portfolio-info ai-project-info reveal-up" data-aos="fade-left" data-aos-delay="120">
+              <h3>Project Information</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Category</strong>: Enterprise AI Product Engineering</li>
+                <li><strong>Focus</strong>: RAG Copilot + Agentic Workflow</li>
+                <li><strong>Core Stack</strong>: LLMs, retrieval, orchestration, observability</li>
+                <li><strong>Delivery Mode</strong>: Iterative milestones with measurable quality checks</li>
+                <li><strong>Project URL</strong>: <a href="index.html#contact">Request a walkthrough</a></li>
               </ul>
             </div>
-            <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
+
+            <div class="ai-metric-panel reveal-up" data-aos="fade-left" data-aos-delay="200">
+              <h4>AI Performance Priorities</h4>
+              <div class="ai-metric-grid">
+                <article class="ai-metric-card">
+                  <span class="metric-value">Grounded</span>
+                  <p>Responses tied to verified knowledge chunks.</p>
+                </article>
+                <article class="ai-metric-card">
+                  <span class="metric-value">Observable</span>
+                  <p>Prompt, retrieval, and tool traces tracked end-to-end.</p>
+                </article>
+                <article class="ai-metric-card">
+                  <span class="metric-value">Controlled</span>
+                  <p>Action boundaries with approval checkpoints.</p>
+                </article>
+                <article class="ai-metric-card">
+                  <span class="metric-value">Scalable</span>
+                  <p>Modular architecture ready for new workflows.</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="portfolio-description ai-project-description reveal-up" data-aos="fade-left" data-aos-delay="260">
+              <h2>Why this AI build works in production</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                The experience is designed around practical constraints: correctness, latency, auditability, and
+                team adoption. Instead of a demo-only chatbot, the final system behaves like a dependable AI copilot
+                with controlled autonomy and business-safe execution.
               </p>
             </div>
           </div>
-
         </div>
-
       </div>
-    </section><!-- End Portfolio Details Section -->
+    </section>
 
-  </main><!-- End #main -->
+    <section class="ai-features">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>AI Features</h2>
+          <p>Clear capabilities, not vague claims</p>
+        </div>
+        <div class="row gy-4">
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <article class="ai-feature-card reveal-up">
+              <div class="ai-feature-icon"><i class="bi bi-search-heart"></i></div>
+              <h4>Hybrid Retrieval</h4>
+              <p>Semantic + keyword retrieval with reranking for stronger relevance.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="180">
+            <article class="ai-feature-card reveal-up">
+              <div class="ai-feature-icon"><i class="bi bi-cpu"></i></div>
+              <h4>Agent Tooling</h4>
+              <p>Agents plan and execute tasks through curated APIs and internal tools.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="260">
+            <article class="ai-feature-card reveal-up">
+              <div class="ai-feature-icon"><i class="bi bi-shield-lock"></i></div>
+              <h4>Safety Guardrails</h4>
+              <p>Policy checks, permission scopes, and fallback routing before action.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="340">
+            <article class="ai-feature-card reveal-up">
+              <div class="ai-feature-icon"><i class="bi bi-activity"></i></div>
+              <h4>Live Monitoring</h4>
+              <p>Prompt-level visibility across quality, cost, and performance trends.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- ======= Footer ======= -->
+    <section class="ai-execution-flow">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title section-title-light">
+          <h2>Agent Flow</h2>
+          <p>How AI decisions move from query to action</p>
+        </div>
+        <div class="row gy-4">
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+            <article class="ai-step-card reveal-up">
+              <span class="ai-step-index">01</span>
+              <h4>Understand</h4>
+              <p>User intent, context, and risk level are classified first.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="180">
+            <article class="ai-step-card reveal-up">
+              <span class="ai-step-index">02</span>
+              <h4>Retrieve</h4>
+              <p>Relevant documents are fetched, scored, and filtered for quality.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="260">
+            <article class="ai-step-card reveal-up">
+              <span class="ai-step-index">03</span>
+              <h4>Reason + Act</h4>
+              <p>Agents call tools, enforce policy, and execute approved actions.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="340">
+            <article class="ai-step-card reveal-up">
+              <span class="ai-step-index">04</span>
+              <h4>Observe</h4>
+              <p>Trace logs and evaluation signals drive continuous improvement.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ai-stack-section">
+      <div class="container">
+        <div class="ai-stack-card reveal-up" data-aos="fade-up">
+          <h3>Tech Lens for This Build</h3>
+          <p>
+            The architecture combines modern LLM tooling with production discipline so the system is both innovative
+            and operationally dependable.
+          </p>
+          <div class="ai-stack-tags">
+            <span>LangChain Patterns</span>
+            <span>Vector Retrieval</span>
+            <span>Agent State Management</span>
+            <span>Evaluation Loops</span>
+            <span>Prompt Versioning</span>
+            <span>Workflow Automation</span>
+          </div>
+          <a href="index.html#contact" class="btn-get-started">Discuss Your AI Use Case</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer id="footer">
-
     <div class="footer-newsletter">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <h4>Stay Updated</h4>
+            <p>Subscribe for practical notes on AI systems, agents, and workflow engineering.</p>
             <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+              <input type="email" name="email" placeholder="Your email address"><input type="submit" value="Subscribe">
             </form>
           </div>
         </div>
@@ -157,83 +274,68 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Ninestars</h3>
+            <h3>ARQ Analytics</h3>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              AI engineering for RAG, agents, and workflows.<br><br>
+              <strong>Phone:</strong> +91 97248 06960<br>
+              <strong>Email:</strong> contact@arq-analytics.com<br>
             </p>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Quick Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html#about">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html#flow">Flow</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html#playbooks">Playbooks</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html#portfolio">Examples</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Core Focus</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html#portfolio">RAG Copilots</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html#portfolio">Agentic Systems</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html#portfolio">AI Agents</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html#portfolio">Workflow Automation</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            <h4>Connect</h4>
+            <p>Follow us for updates on practical AI engineering.</p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
               <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
-
         </div>
       </div>
     </div>
 
     <div class="container py-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>Ninestars</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>ARQ Analytics</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/ -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
