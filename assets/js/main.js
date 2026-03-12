@@ -41,6 +41,23 @@
     el.addEventListener('scroll', listener)
   }
 
+  const siteConfig = Object.freeze({
+    contact: {
+      location: 'Serving clients across India and global remote engagements.',
+      email: 'contact@arq-analytics.com',
+      phoneDisplay: '+91 97248 06960',
+      phoneLink: '+919724806960'
+    },
+    demo: {
+      youtubeUrl: '',
+      mp4Url: '',
+      posterImage: 'assets/img/portfolio/portfolio-details-1.jpg',
+      posterAlt: 'ARQ ONE AI Labs demo preview',
+      placeholderTitle: 'Recorded walkthrough coming soon',
+      placeholderCopy: 'A product demo will appear here once the final walkthrough is published. Until then, request a live session for a guided product tour.'
+    }
+  })
+
   /**
    * Navbar links active state on scroll
    */
@@ -243,6 +260,347 @@
   });
 
   /**
+   * Render premium contact section markup from a central config
+   */
+  (() => {
+    const mount = select('#contact .row.gy-4')
+    if (!mount) return
+
+    const { contact } = siteConfig
+
+    mount.innerHTML = `
+      <div class="col-lg-5 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+        <div class="info contact-info-card reveal-up">
+          <div class="contact-panel-intro">
+            <span class="contact-panel-kicker">Contact / Get Started</span>
+            <h3>Get in touch</h3>
+            <p>Let's discuss AI copilots, agentic workflows, or a domain-specific solution for your business.</p>
+          </div>
+
+          <div class="contact-detail-row">
+            <div class="contact-detail-icon">
+              <i class="bi bi-geo-alt"></i>
+            </div>
+            <div class="contact-detail-copy">
+              <h4>Location</h4>
+              <p data-contact-field="location">${contact.location}</p>
+            </div>
+          </div>
+
+          <div class="contact-detail-row">
+            <div class="contact-detail-icon">
+              <i class="bi bi-envelope"></i>
+            </div>
+            <div class="contact-detail-copy">
+              <h4>Email</h4>
+              <p><a href="mailto:${contact.email}" data-contact-field="email">${contact.email}</a></p>
+            </div>
+          </div>
+
+          <div class="contact-detail-row">
+            <div class="contact-detail-icon">
+              <i class="bi bi-phone"></i>
+            </div>
+            <div class="contact-detail-copy">
+              <h4>Phone</h4>
+              <p><a href="tel:${contact.phoneLink}" data-contact-field="phone">${contact.phoneDisplay}</a></p>
+            </div>
+          </div>
+
+          <div class="contact-service-note">
+            <span class="service-note-label">Engagement model</span>
+            <p>Serving clients across India and global remote engagements with architecture reviews, scoped pilots, and production delivery.</p>
+          </div>
+
+          <div class="contact-what-to-expect">
+            <h5>What happens next</h5>
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Initial review within 1 business day</li>
+              <li><i class="bi bi-check-circle-fill"></i> Discovery call around use case, constraints, and data readiness</li>
+              <li><i class="bi bi-check-circle-fill"></i> Recommended next step: workshop, prototype, or implementation scope</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form contact-form-card reveal-up" data-enhanced-form="contact" novalidate>
+          <div class="row g-3">
+            <div class="form-group col-md-6">
+              <label for="contact-name">Full Name</label>
+              <input type="text" name="name" class="form-control" id="contact-name" placeholder="Your full name" autocomplete="name" required maxlength="120">
+              <div class="form-error" aria-live="polite"></div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="contact-email">Work Email</label>
+              <input type="email" class="form-control" name="email" id="contact-email" placeholder="you@company.com" autocomplete="email" inputmode="email" required maxlength="160">
+              <div class="form-error" aria-live="polite"></div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="contact-company">Company Name</label>
+              <input type="text" class="form-control" name="company" id="contact-company" placeholder="Your company" autocomplete="organization" required maxlength="140">
+              <div class="form-error" aria-live="polite"></div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="contact-subject">Subject</label>
+              <input type="text" class="form-control" name="subject" id="contact-subject" placeholder="What are you exploring?" required maxlength="180">
+              <div class="form-error" aria-live="polite"></div>
+            </div>
+            <div class="form-group col-12">
+              <label for="contact-message">Message</label>
+              <textarea class="form-control" name="message" id="contact-message" rows="8" placeholder="Describe the use case, users, constraints, and what a successful outcome looks like." required maxlength="2400"></textarea>
+              <div class="form-error" aria-live="polite"></div>
+            </div>
+
+            <div class="contact-honeypot" aria-hidden="true">
+              <label for="contact-website">Website</label>
+              <input type="text" id="contact-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+
+            <input type="hidden" name="form_context" value="ARQ Website Contact">
+          </div>
+
+          <div class="my-3 form-feedback-stack" aria-live="polite">
+            <div class="loading">Sending your request...</div>
+            <div class="error-message" role="alert"></div>
+            <div class="sent-message" role="status">Thanks. Your request has been sent. We will follow up within one business day.</div>
+          </div>
+
+          <div class="contact-form-footer">
+            <p class="form-trust-note">Use this form for project enquiries and demo requests. The structure is ready for backend spam protection and routing.</p>
+            <div class="text-center text-lg-end"><button type="submit">Request a Demo</button></div>
+          </div>
+        </form>
+      </div>
+    `
+  })();
+
+  /**
+   * Apply contact details from config across the site
+   */
+  (() => {
+    const { contact } = siteConfig
+
+    select('[data-contact-field="location"]', true).forEach((node) => {
+      node.textContent = contact.location
+    })
+
+    select('[data-contact-field="email"]', true).forEach((node) => {
+      node.textContent = contact.email
+      if (node.tagName === 'A') {
+        node.setAttribute('href', `mailto:${contact.email}`)
+      }
+    })
+
+    select('[data-contact-field="phone"]', true).forEach((node) => {
+      node.textContent = contact.phoneDisplay
+      if (node.tagName === 'A') {
+        node.setAttribute('href', `tel:${contact.phoneLink}`)
+      }
+    })
+  })();
+
+  /**
+   * Render demo media with placeholder support until a final URL is available
+   */
+  (() => {
+    const demoRoot = select('[data-demo-root]')
+    if (!demoRoot) return
+
+    const { demo } = siteConfig
+
+    const getYouTubeEmbedUrl = (url) => {
+      if (!url) return ''
+
+      try {
+        const parsedUrl = new URL(url)
+        if (parsedUrl.hostname.includes('youtu.be')) {
+          const videoId = parsedUrl.pathname.replace('/', '')
+          return videoId ? `https://www.youtube-nocookie.com/embed/${videoId}?rel=0` : ''
+        }
+
+        if (parsedUrl.hostname.includes('youtube.com')) {
+          if (parsedUrl.pathname.includes('/embed/')) {
+            return parsedUrl.href.replace('youtube.com', 'youtube-nocookie.com')
+          }
+
+          const videoId = parsedUrl.searchParams.get('v')
+          return videoId ? `https://www.youtube-nocookie.com/embed/${videoId}?rel=0` : ''
+        }
+      } catch (error) {
+        return ''
+      }
+
+      return ''
+    }
+
+    const posterImage = demo.posterImage || demoRoot.getAttribute('data-demo-poster') || ''
+    const youtubeEmbedUrl = getYouTubeEmbedUrl(demo.youtubeUrl)
+
+    if (youtubeEmbedUrl) {
+      demoRoot.innerHTML = `
+        <div class="demo-embed">
+          <iframe
+            src="${youtubeEmbedUrl}"
+            title="ARQ ONE AI Labs product demo"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+      `
+      return
+    }
+
+    if (demo.mp4Url) {
+      demoRoot.innerHTML = `
+        <div class="demo-embed">
+          <video controls preload="none" poster="${posterImage}">
+            <source src="${demo.mp4Url}" type="video/mp4">
+          </video>
+        </div>
+      `
+      return
+    }
+
+    demoRoot.innerHTML = `
+      <div class="demo-placeholder">
+        <img src="${posterImage}" alt="${demo.posterAlt}" loading="lazy">
+        <div class="demo-placeholder-overlay">
+          <span class="demo-placeholder-pill">Demo coming soon</span>
+          <div class="demo-placeholder-play"><i class="bi bi-play-fill"></i></div>
+          <h4>${demo.placeholderTitle}</h4>
+          <p>${demo.placeholderCopy}</p>
+          <a href="#contact" class="btn-demo-placeholder scrollto">Request a live demo</a>
+        </div>
+      </div>
+    `
+  })();
+
+  /**
+   * Custom validation and submission flow for the premium contact form
+   */
+  (() => {
+    const form = select('[data-enhanced-form="contact"]')
+    if (!form) return
+
+    const fieldLabels = {
+      name: 'Full Name',
+      email: 'Work Email',
+      company: 'Company Name',
+      subject: 'Subject',
+      message: 'Message'
+    }
+
+    const inputs = [...form.querySelectorAll('.form-control')]
+
+    const setFeedback = (state, message = '') => {
+      const loading = form.querySelector('.loading')
+      const error = form.querySelector('.error-message')
+      const success = form.querySelector('.sent-message')
+
+      ;[loading, error, success].forEach((node) => {
+        node.classList.remove('d-block')
+      })
+
+      if (state === 'loading') {
+        loading.classList.add('d-block')
+      }
+
+      if (state === 'error') {
+        error.textContent = message
+        error.classList.add('d-block')
+      }
+
+      if (state === 'success') {
+        success.textContent = message || success.textContent
+        success.classList.add('d-block')
+      }
+    }
+
+    const setFieldError = (input, message) => {
+      const errorNode = input.closest('.form-group')?.querySelector('.form-error')
+
+      input.classList.toggle('is-invalid', Boolean(message))
+      input.setAttribute('aria-invalid', message ? 'true' : 'false')
+
+      if (errorNode) {
+        errorNode.textContent = message
+      }
+    }
+
+    const validateField = (input) => {
+      const value = input.value.trim()
+      const label = fieldLabels[input.name] || 'This field'
+      let message = ''
+
+      if (input.hasAttribute('required') && !value) {
+        message = `${label} is required.`
+      } else if (input.type === 'email') {
+        const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
+        if (!isValidEmail) {
+          message = 'Enter a valid email address.'
+        }
+      } else if (input.name === 'message' && value.length < 24) {
+        message = 'Please add a bit more detail so we can route your request.'
+      }
+
+      setFieldError(input, message)
+      return !message
+    }
+
+    const validateForm = () => inputs.every((input) => validateField(input))
+
+    inputs.forEach((input) => {
+      input.addEventListener('blur', () => validateField(input))
+      input.addEventListener('input', () => {
+        if (input.classList.contains('is-invalid')) {
+          validateField(input)
+        }
+      })
+    })
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault()
+      event.stopImmediatePropagation()
+
+      if (!validateForm()) {
+        setFeedback('error', 'Please review the highlighted fields and try again.')
+        return
+      }
+
+      const honeypot = form.querySelector('input[name="website"]')
+      if (honeypot && honeypot.value.trim()) {
+        form.reset()
+        setFeedback('success', 'Thanks. Your request has been received.')
+        return
+      }
+
+      setFeedback('loading')
+
+      try {
+        const response = await fetch(form.getAttribute('action'), {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'X-Requested-With': 'XMLHttpRequest' }
+        })
+
+        const result = await response.text()
+
+        if (!response.ok || result.trim() !== 'OK') {
+          throw new Error(result.trim() || 'Unable to send your request right now.')
+        }
+
+        form.reset()
+        inputs.forEach((input) => setFieldError(input, ''))
+        setFeedback('success', 'Thanks. Your request has been sent. We will follow up within one business day.')
+      } catch (error) {
+        setFeedback('error', error.message || 'Unable to send your request right now.')
+      }
+    }, true)
+  })();
+
+  /**
    * Progressive reveal for cards and content blocks
    */
   window.addEventListener('load', () => {
@@ -310,7 +668,7 @@
    */
   (() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    const cards = select('.portfolio .portfolio-wrap, .playbook-card', true);
+    const cards = select('.portfolio .portfolio-wrap, .playbook-card, .expertise-card', true);
     if (!cards.length) return;
 
     cards.forEach((card) => {
