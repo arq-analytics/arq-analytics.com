@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#091a36"/>
+      <stop offset="100%" style="stop-color:#0d2245"/>
+    </linearGradient>
+    <linearGradient id="acc4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg4)"/>
+  <path d="M0 100 H800 M0 200 H800 M0 300 H800 M0 400 H800 M100 0 V500 M200 0 V500 M300 0 V500 M400 0 V500 M500 0 V500 M600 0 V500 M700 0 V500" stroke="rgba(34,211,238,0.06)" stroke-width="1"/>
+  <rect x="40" y="36" width="300" height="32" rx="16" fill="rgba(16,185,129,0.18)" stroke="rgba(34,211,238,0.4)" stroke-width="1"/>
+  <text x="190" y="57" text-anchor="middle" fill="#8cf9e9" font-family="monospace" font-size="12" font-weight="700">SALES &amp; APP DEVELOPMENT CO-PILOT</text>
+  <rect x="40" y="100" width="240" height="360" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(100,180,255,0.2)" stroke-width="1"/>
+  <rect x="40" y="100" width="240" height="36" rx="14" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+  <text x="160" y="124" text-anchor="middle" fill="#8cf9e9" font-family="monospace" font-size="11" font-weight="700">Co-pilot Interface</text>
+  <rect x="60" y="152" width="160" height="30" rx="8" fill="rgba(34,211,238,0.12)" stroke="rgba(34,211,238,0.3)" stroke-width="1"/>
+  <text x="140" y="171" text-anchor="middle" fill="#7de8fa" font-family="monospace" font-size="10">Draft proposal for Acme Corp</text>
+  <rect x="60" y="196" width="180" height="44" rx="8" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="150" y="212" text-anchor="middle" fill="#8cf9e9" font-family="monospace" font-size="9">Proposal drafted using</text>
+  <text x="150" y="228" text-anchor="middle" fill="#6ab8a0" font-family="monospace" font-size="9">Acme's history + pricing</text>
+  <rect x="60" y="256" width="150" height="30" rx="8" fill="rgba(34,211,238,0.12)" stroke="rgba(34,211,238,0.3)" stroke-width="1"/>
+  <text x="135" y="275" text-anchor="middle" fill="#7de8fa" font-family="monospace" font-size="10">Generate component scaffold</text>
+  <rect x="60" y="302" width="180" height="44" rx="8" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="150" y="318" text-anchor="middle" fill="#8cf9e9" font-family="monospace" font-size="9">React component + types</text>
+  <text x="150" y="334" text-anchor="middle" fill="#6ab8a0" font-family="monospace" font-size="9">Tests + Storybook story</text>
+  <rect x="320" y="100" width="200" height="85" rx="12" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.4)" stroke-width="1"/>
+  <text x="420" y="128" text-anchor="middle" fill="#8cf9e9" font-family="monospace" font-size="11" font-weight="700">Sales Intelligence</text>
+  <text x="420" y="148" text-anchor="middle" fill="#6ab8a0" font-family="monospace" font-size="10">CRM-grounded proposals</text>
+  <text x="420" y="164" text-anchor="middle" fill="#6ab8a0" font-family="monospace" font-size="10">Objection handling · Follow-ups</text>
+  <rect x="320" y="205" width="200" height="85" rx="12" fill="rgba(34,211,238,0.1)" stroke="rgba(34,211,238,0.4)" stroke-width="1"/>
+  <text x="420" y="233" text-anchor="middle" fill="#7de8fa" font-family="monospace" font-size="11" font-weight="700">Dev Co-pilot</text>
+  <text x="420" y="253" text-anchor="middle" fill="#5abcd4" font-family="monospace" font-size="10">Code generation + review</text>
+  <text x="420" y="269" text-anchor="middle" fill="#5abcd4" font-family="monospace" font-size="10">Architecture + test generation</text>
+  <rect x="320" y="310" width="200" height="85" rx="12" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.35)" stroke-width="1"/>
+  <text x="420" y="338" text-anchor="middle" fill="#fcd34d" font-family="monospace" font-size="11" font-weight="700">Integrations</text>
+  <text x="420" y="358" text-anchor="middle" fill="#c4a020" font-family="monospace" font-size="10">Salesforce · GitHub · Jira</text>
+  <text x="420" y="374" text-anchor="middle" fill="#c4a020" font-family="monospace" font-size="10">Slack · Confluence · Docs</text>
+  <line x1="282" y1="200" x2="318" y2="142" stroke="url(#acc4)" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="282" y1="280" x2="318" y2="247" stroke="url(#acc4)" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <rect x="560" y="120" width="200" height="270" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(100,180,255,0.18)" stroke-width="1"/>
+  <text x="660" y="148" text-anchor="middle" fill="#a8c8f0" font-family="monospace" font-size="10" font-weight="700">UNDERLYING MODELS</text>
+  <text x="660" y="178" text-anchor="middle" fill="#8cf9e9" font-family="monospace" font-size="11">GPT-4o</text>
+  <text x="660" y="198" text-anchor="middle" fill="#7de8fa" font-family="monospace" font-size="11">Claude 3.5</text>
+  <text x="660" y="218" text-anchor="middle" fill="#6ab8a0" font-family="monospace" font-size="11">Code Llama</text>
+  <line x1="590" y1="228" x2="730" y2="228" stroke="rgba(100,180,255,0.2)" stroke-width="1"/>
+  <text x="660" y="258" text-anchor="middle" fill="#a8c8f0" font-family="monospace" font-size="10" font-weight="700">MEMORY</text>
+  <text x="660" y="278" text-anchor="middle" fill="#6a9ea0" font-family="monospace" font-size="10">Deal context</text>
+  <text x="660" y="298" text-anchor="middle" fill="#6a9ea0" font-family="monospace" font-size="10">Codebase context</text>
+  <text x="660" y="318" text-anchor="middle" fill="#6a9ea0" font-family="monospace" font-size="10">User preferences</text>
+  <line x1="590" y1="328" x2="730" y2="328" stroke="rgba(100,180,255,0.2)" stroke-width="1"/>
+  <text x="660" y="358" text-anchor="middle" fill="#a8c8f0" font-family="monospace" font-size="10" font-weight="700">GUARDRAILS</text>
+  <text x="660" y="378" text-anchor="middle" fill="#6a9ea0" font-family="monospace" font-size="10">PII redaction</text>
+</svg>
