@@ -4275,3 +4275,399 @@ a:hover {
     width: 100%;
   }
 }
+
+/* ==============================================================
+   Mobile Polish + Neon Depth Layer — March 2026 v2
+   Gold-standard: correct on every screen, striking everywhere
+   ============================================================== */
+
+/* ---------------------------------------------------------------
+   XS Phone Breakpoint (≤ 480px)
+   Fills the gap for iPhone SE, older Androids, 375–430px devices.
+   All font sizes and padding tuned for usability, not just fitting.
+   --------------------------------------------------------------- */
+@media (max-width: 480px) {
+  /* Hero */
+  #hero h1 { font-size: 28px; line-height: 1.16; }
+  #hero h2 { font-size: 15px; margin-top: 12px; }
+
+  .hero-badge {
+    font-size: 11px;
+    padding: 5px 12px;
+    flex-wrap: wrap;
+  }
+
+  .hero-stat-number { font-size: 18px; }
+  .hero-stats       { gap: 10px; padding-top: 22px; margin-top: 28px; }
+
+  /* Section headings */
+  .section-title p { font-size: 24px !important; line-height: 1.2; }
+
+  /* CTA banner */
+  #cta-banner { padding: 80px 0; }
+  #cta-banner h2 { font-size: 24px; }
+  #cta-banner p  { font-size: 15px; }
+
+  .btn-cta-primary,
+  .btn-cta-secondary { padding: 13px 22px; font-size: 15px; }
+
+  /* Contact + Demo shell headings */
+  .contact-panel-intro h3,
+  .demo-shell-head h3    { font-size: 20px; }
+  .demo-placeholder h4   { font-size: 20px; }
+
+  /* First Principles */
+  .first-principles-section { padding: 56px 0; }
+  .fp-statement  { padding: 24px 20px; }
+  .fp-quote-mark { font-size: 52px; }
+  .fp-quote-text { font-size: 15px; }
+
+  /* Capability strip — compact but readable */
+  .capability-inner    { padding: 20px 12px; }
+  .capability-inner h4 { font-size: 14px; margin-bottom: 4px; }
+  .capability-inner p  { font-size: 11.5px; }
+
+  /* Tech marquee label */
+  .tech-marquee-label {
+    font-size: 9.5px;
+    letter-spacing: 1.5px;
+    padding: 0 16px;
+  }
+
+  /* Expertise why-strip */
+  .expertise-why-strip   { padding: 18px 16px; }
+  .expertise-why-copy h3 { font-size: 20px; }
+
+  /* Demo bullets — 1 col on xs */
+  .demo-bullet-row { grid-template-columns: 1fr; }
+
+  /* About heading */
+  .about h3 { font-size: 24px; }
+
+  /* Footer */
+  #footer .footer-top .footer-contact h3 { font-size: 18px; }
+}
+
+/* Demo bullets — 2 col between 481px and 767px (small tablets) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .demo-bullet-row { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ---------------------------------------------------------------
+   Hero float badges — tidy static row at mobile (≤ 768px)
+   Already go position:static at this size; just ensure they flow
+   cleanly as a wrapping pill row under the hero image.
+   --------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .hero-float {
+    font-size: 11px;
+    padding: 6px 10px;
+    gap: 6px;
+  }
+
+  /* Contain floats in a wrapping row beneath the panel image */
+  .hero-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+/* ---------------------------------------------------------------
+   NEON ENHANCEMENT LAYER
+   Ambient glow, icon pulses, card auras, neon borders.
+   All effects are tasteful — depth, not disco.
+   --------------------------------------------------------------- */
+
+/* 1. Hero stat numbers — neon mint tint on figures */
+.hero-stat-number {
+  text-shadow: 0 0 22px rgba(140, 249, 233, 0.32);
+}
+
+/* 2. Badge dot + CTA eyebrow dot — bright neon halo */
+.badge-dot,
+.cta-eyebrow-dot {
+  box-shadow:
+    0 0 8px rgba(140, 249, 233, 0.75),
+    0 0 18px rgba(140, 249, 233, 0.3);
+}
+
+/* 3. Hero badge — slow breathing neon border */
+.hero-badge {
+  animation: badge-glow 5s ease-in-out infinite alternate;
+}
+
+@keyframes badge-glow {
+  from {
+    background: rgba(16, 185, 129, 0.14);
+    border-color: rgba(34, 211, 238, 0.32);
+    box-shadow: none;
+  }
+  to {
+    background: rgba(34, 211, 238, 0.18);
+    border-color: rgba(140, 249, 233, 0.58);
+    box-shadow: 0 0 14px rgba(34, 211, 238, 0.22);
+  }
+}
+
+/* 4. Hero float badges — neon border pulse layered on bob */
+.hero-float {
+  animation:
+    bob 4s ease-in-out infinite,
+    float-border-pulse 6s ease-in-out infinite alternate;
+}
+
+.hero-float-two   { animation-delay: 0.7s; }
+.hero-float-three { animation-delay: 1.4s; }
+
+@keyframes float-border-pulse {
+  from {
+    border-color: rgba(151, 196, 255, 0.35);
+    box-shadow: 0 10px 24px rgba(1, 8, 20, 0.5);
+  }
+  to {
+    border-color: rgba(140, 249, 233, 0.65);
+    box-shadow:
+      0 10px 28px rgba(34, 211, 238, 0.25),
+      0 0 18px rgba(34, 211, 238, 0.12);
+  }
+}
+
+/* 5. Section eyebrow labels — neon glow on all dark contexts */
+.dark-section .section-title h2,
+.ai-features-section .section-title h2,
+.why-arq.dark-section .section-title h2,
+.playbooks.dark-section .section-title h2,
+.expertise-section .section-title h2,
+.demo-section .section-title h2,
+.contact-premium .section-title h2 {
+  text-shadow: 0 0 20px rgba(34, 211, 238, 0.55);
+}
+
+/* 6. AI feature icons — always-on neon drop shadow */
+.ai-feature-icon i {
+  filter: drop-shadow(0 0 9px rgba(34, 211, 238, 0.65));
+}
+
+/* 7. AI feature icon container — neon border glow on hover (enhanced) */
+.ai-feature-card:hover .ai-feature-icon {
+  box-shadow: 0 0 32px rgba(34, 211, 238, 0.55);
+}
+
+/* 8. Why ARQ icons on dark section — ambient ring */
+.why-arq.dark-section .why-arq-icon {
+  box-shadow:
+    inset 0 0 0 1px rgba(34, 211, 238, 0.18),
+    0 0 20px rgba(34, 211, 238, 0.16);
+}
+
+/* 9. Why ARQ hover — stronger neon aura */
+.why-arq.dark-section .why-arq-card:hover {
+  box-shadow:
+    0 0 60px rgba(34, 211, 238, 0.18),
+    0 0 120px rgba(16, 185, 129, 0.07),
+    0 24px 48px rgba(0, 0, 0, 0.42) !important;
+}
+
+/* 10. Capability strip icons — neon glow on hover */
+.capability-inner i {
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.capability-inner:hover i {
+  filter: drop-shadow(0 0 14px rgba(34, 211, 238, 0.88));
+  transform: scale(1.1) translateY(-2px);
+}
+
+/* 11. Expertise card — neon ambient base inset */
+.expertise-card {
+  box-shadow:
+    0 18px 42px rgba(3, 9, 24, 0.34),
+    inset 0 0 0 1px rgba(34, 211, 238, 0.06);
+}
+
+/* 12. Expertise icon — always-on neon tint */
+.expertise-icon i {
+  filter: drop-shadow(0 0 6px rgba(140, 249, 233, 0.5));
+}
+
+/* 13. Expertise card hover — stronger neon aura */
+.expertise-card:hover {
+  box-shadow:
+    0 0 48px rgba(34, 211, 238, 0.16),
+    0 0 96px rgba(16, 185, 129, 0.07),
+    0 24px 54px rgba(0, 0, 0, 0.42);
+}
+
+/* 14. Playbook cards on dark section — neon hover aura */
+.playbooks.dark-section .playbook-card:hover {
+  box-shadow:
+    0 0 50px rgba(34, 211, 238, 0.16),
+    0 0 100px rgba(16, 185, 129, 0.07),
+    0 20px 40px rgba(0, 0, 0, 0.38) !important;
+}
+
+/* 15. Flow step circles — neon ring shadow */
+.flow-step {
+  box-shadow:
+    0 8px 20px rgba(34, 211, 238, 0.28),
+    0 0 32px rgba(16, 185, 129, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+/* 16. Flow timeline track — neon glow line */
+@media (min-width: 992px) {
+  .flow-timeline-track {
+    box-shadow: 0 0 16px rgba(34, 211, 238, 0.5);
+    opacity: 0.38;
+  }
+}
+
+/* 17. Marquee items — neon hover shadow */
+.marquee-item:hover {
+  box-shadow:
+    0 0 18px rgba(34, 211, 238, 0.24),
+    0 0 36px rgba(34, 211, 238, 0.08);
+}
+
+/* 18. CTA headline gradient — neon breathing animation */
+#cta-banner h2 .cta-highlight {
+  display: inline;
+  animation: cta-neon-pulse 4s ease-in-out infinite alternate;
+}
+
+@keyframes cta-neon-pulse {
+  from { filter: brightness(1); }
+  to   { filter: brightness(1.15) drop-shadow(0 0 20px rgba(34, 211, 238, 0.6)); }
+}
+
+/* 19. CTA eyebrow — neon pill pulse */
+.cta-eyebrow {
+  animation: eyebrow-neon 5s ease-in-out infinite alternate;
+}
+
+@keyframes eyebrow-neon {
+  from {
+    border-color: rgba(52, 211, 153, 0.28);
+    box-shadow: none;
+  }
+  to {
+    border-color: rgba(52, 211, 153, 0.58);
+    box-shadow: 0 0 16px rgba(52, 211, 153, 0.22);
+  }
+}
+
+/* 20. Demo play button — neon pulse glow */
+.demo-placeholder-play {
+  animation: play-pulse 3s ease-in-out infinite;
+}
+
+@keyframes play-pulse {
+  0%, 100% {
+    box-shadow:
+      0 0 30px rgba(34, 211, 238, 0.22),
+      0 0 60px rgba(34, 211, 238, 0.08),
+      0 20px 40px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    box-shadow:
+      0 0 50px rgba(34, 211, 238, 0.45),
+      0 0 100px rgba(34, 211, 238, 0.18),
+      0 20px 40px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* 21. Scroll progress bar — enhanced neon glow */
+.scroll-progress {
+  box-shadow:
+    0 3px 12px rgba(34, 211, 238, 0.6),
+    0 1px 4px rgba(16, 185, 129, 0.45);
+}
+
+/* 22. Contact detail icon — idle neon ring */
+.contact-detail-icon {
+  box-shadow: 0 0 18px rgba(34, 211, 238, 0.18);
+}
+
+/* 23. First Principles card icons — neon on hover */
+.fp-icon i {
+  transition: filter 0.3s ease;
+}
+
+.fp-card:hover .fp-icon i {
+  filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.7));
+}
+
+/* 24. Demo shell — ambient neon edge */
+.demo-shell {
+  box-shadow:
+    0 22px 52px rgba(2, 8, 24, 0.42),
+    0 0 0 1px rgba(34, 211, 238, 0.08) inset;
+}
+
+/* 25. Contact form focus — neon ring (enhanced) */
+.contact-premium .contact-form-card .form-control:focus {
+  border-color: rgba(34, 211, 238, 0.65) !important;
+  box-shadow:
+    0 0 0 4px rgba(34, 211, 238, 0.15),
+    0 0 22px rgba(34, 211, 238, 0.1) !important;
+}
+
+/* ---------------------------------------------------------------
+   Contact premium — dark glass panel overrides for existing HTML structure
+   The info panel uses old class names (.address, .email, .phone) inside
+   a dark-glass contact-premium section; these ensure correct dark-on-glass
+   text + icon colors without rewriting the HTML structure.
+   --------------------------------------------------------------- */
+
+/* Icon circles inside the dark glass info panel */
+.contact-premium .info.contact-info-card i {
+  background: rgba(16, 185, 129, 0.15) !important;
+  color: #8cf9e9 !important;
+  border: 1px solid rgba(34, 211, 238, 0.28);
+}
+
+/* h4 labels (Location, Email, Call, Availability) */
+.contact-premium .info.contact-info-card .address h4,
+.contact-premium .info.contact-info-card .email h4,
+.contact-premium .info.contact-info-card .phone h4,
+.contact-premium .info.contact-info-card .contact-availability h4 {
+  color: #eef7ff;
+}
+
+/* p values */
+.contact-premium .info.contact-info-card .address p,
+.contact-premium .info.contact-info-card .email p,
+.contact-premium .info.contact-info-card .phone p,
+.contact-premium .info.contact-info-card .contact-availability p {
+  color: #a9c6ea;
+}
+
+/* Intro block heading + body inside dark glass */
+.contact-premium .contact-intro-block h3 {
+  color: #ffffff;
+}
+
+.contact-premium .contact-intro-block p {
+  color: #a9c6ea;
+}
+
+.contact-premium .contact-intro-block {
+  border-bottom-color: rgba(160, 208, 255, 0.14);
+}
+
+/* ---------------------------------------------------------------
+   Prefers reduced motion — all new animations disabled
+   (existing rule already handles this but be explicit)
+   --------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .hero-badge,
+  .hero-float,
+  .hero-float-two,
+  .hero-float-three,
+  .cta-eyebrow,
+  #cta-banner h2 .cta-highlight,
+  .demo-placeholder-play {
+    animation: none !important;
+  }
+}
