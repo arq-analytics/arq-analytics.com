@@ -1,0 +1,24 @@
+{
+  "name": "@arq/backend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    "./domain": "./src/domain/index.ts",
+    "./services": "./src/services/index.ts",
+    "./config": "./src/config.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "nodemailer": "10.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "@types/nodemailer": "8.0.2",
+    "typescript": "5.9.3",
+    "vitest": "5.0.5"
+  }
+}

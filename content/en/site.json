@@ -1,0 +1,43 @@
+{
+  "_comment": "Single source of truth for brand facts. No other file in the repo may hard-code these values. scripts/lint_content.py enforces this.",
+  "brand": {
+    "name": "ARQ ONE AI Labs",
+    "short": "ARQ",
+    "domain": "https://arqoneailabs.space",
+    "locationLine": "Based in Vapi, Gujarat. Working with factories across GIDC and MIDC estates."
+  },
+  "contact": {
+    "phoneDisplay": "+91 97270 67044",
+    "phoneE164": "+919727067044",
+    "whatsappNumber": "919727067044",
+    "email": "contact@arqoneailabs.space",
+    "linkedin": "https://www.linkedin.com/company/arq-one-ai-labs"
+  },
+  "trial": {
+    "days": 14,
+    "products": ["astra", "yantra"]
+  },
+  "pricing": {
+    "mode": "onEnquiry",
+    "label": "Pricing on enquiry"
+  },
+  "statusEnum": ["live", "earlyAccess", "inDevelopment", "planned"],
+  "whatsappPrefill": {
+    "default": "Hello ARQ, I would like to know more about your products.",
+    "astra": "Hello ARQ, I would like to start the free trial of ARQ Astra.",
+    "yantra": "Hello ARQ, I would like to start the free trial of ARQ Yantra.",
+    "digitalTwin": "Hello ARQ, please add me to the early list for ARQ Digital Twin.",
+    "dineastra": "Hello ARQ, I run a restaurant or hotel and would like to hear about ARQ DineAstra.",
+    "dravya": "Hello ARQ, please add me to the early list for ARQ Dravya (tax).",
+    "custom": "Hello ARQ, I would like to discuss a custom app for my business.",
+    "partner": "Hello ARQ, I would like to know about becoming a selling partner."
+  },
+  "referenceCustomer": {
+    "enabled": true,
+    "label": "Reference customer",
+    "name": "Pawan Engineering (Infinity Die Tools)"
+  },
+  "analytics": {
+    "events": ["cta_whatsapp_click", "cta_trial_click", "cta_early_list_click", "enquiry_submitted", "enquiry_failed", "language_switched"]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "_comment": "Labels for the app-view showcase on the home and product pages. English only in v1, like pages.json. Every view is built from data/sample-mockups.json and carries the Sample data badge.",
+  "heading": "See the views",
+  "sub": "These are the tabs inside each app, shown with fictional sample data.",
+  "switchLabel": "Choose an app",
+  "tabsLabel": "Views",
+  "astra": {
+    "name": "ARQ Astra",
+    "tabs": {
+      "ask": "Ask Astra",
+      "collect": "Money to collect",
+      "sales": "Sales and expenses",
+      "agents": "Astra Agents",
+      "connector": "Connector"
+    },
+    "collect": {
+      "heading": "Who owes you, and for how long",
+      "buckets": {
+        "upTo30": "Up to 30 days",
+        "d31to45": "31 to 45 days",
+        "d46to60": "46 to 60 days",
+        "over60": "Over 60 days"
+      },
+      "parties": "{n} parties",
+      "total": "Total receivable"
+    },
+    "sales": {
+      "heading": "Sales, purchases and expenses by month",
+      "sales": "Sales",
+      "purchases": "Purchases",
+      "expenses": "Expenses",
+      "totals": "Six month totals"
+    },
+    "agents": {
+      "heading": "What needs attention today",
+      "priorityOverdue": "{count} parties are more than {days} days overdue, together {amount}.",
+      "priorityMsme": "{count} supplier payments are close to the 45-day limit, together {amount}.",
+      "priorityStock": "{count} stock items have not moved for months, with {amount} locked.",
+      "searchCustomer": "Customer search",
+      "searchSupplier": "Supplier search",
+      "customerResult": "{party}: {invoice}, {amount}, {days} days overdue.",
+      "supplierResult": "{party}: {invoice}, {amount}, invoice is {days} days old."
+    },
+    "connector": {
+      "heading": "Connect Tally in three steps",
+      "note": "The connector only reads from Tally."
+    }
+  },
+  "yantra": {
+    "name": "ARQ Yantra",
+    "tabs": {
+      "dashboard": "Dashboard",
+      "brief": "Morning brief",
+      "machines": "Machines",
+      "voice": "Voice log"
+    },
+    "dashboard": {
+      "heading": "The plant at a glance",
+      "total": "Machines",
+      "running": "Running",
+      "down": "Down",
+      "overdue": "Service overdue",
+      "dueSoon": "Service due in 7 days",
+      "downtimeHeading": "Downtime hours this month",
+      "hours": "{n} h"
+    },
+    "brief": {
+      "heading": "Good morning. Here is what needs attention.",
+      "down": "{machine} is down: {issue}.",
+      "overdue": "{machine} service is overdue by {n} days.",
+      "dueSoon": "{machine} service is due in {n} days.",
+      "allClear": "Nothing needs attention."
+    },
+    "machines": {
+      "heading": "Machine register"
+    },
+    "voice": {
+      "heading": "Say it. ARQ writes the entry."
+    }
+  },
+  "demo": {
+    "pause": "Pause the demo",
+    "play": "Play the demo",
+    "chaptersLabel": "Jump to a product",
+    "headingLive": "See it working",
+    "subLive": "The real tabs of the app, playing through on fictional sample data. Pick any tab to take over.",
+    "headingConcept": "What it is meant to look like",
+    "subConcept": "A concept on fictional data. This product is not live yet, and the screens will change as we build it with the first owners."
+  },
+  "dineastra": {
+    "name": "ARQ DineAstra",
+    "heading": "How the day went",
+    "sales": "Sales",
+    "purchases": "Purchases",
+    "wastage": "Wastage",
+    "wastageHeading": "Thrown away today",
+    "duesHeading": "Vendor dues",
+    "dueToday": "Due today",
+    "dueIn": "Due in {n} days",
+    "overdue": "{n} days overdue"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "arq-website",
+  "private": true,
+  "version": "1.0.0",
+  "description": "ARQ ONE AI Labs website",
+  "workspaces": ["ui/frontend", "ui/backend"],
+  "scripts": {
+    "setup": "npm install && npm run lint:content",
+    "dev": "npm run dev -w @arq/frontend",
+    "build": "npm run build -w @arq/frontend",
+    "build:static": "node scripts/build-static.mjs",
+    "start": "npm run start -w @arq/frontend",
+    "test": "npm run lint:content && npm run seed && npm run check:hex && npm run typecheck && npm run lint && npm run test:unit",
+    "test:unit": "npm run test -w @arq/backend && npm run test -w @arq/frontend",
+    "typecheck": "npm run typecheck -w @arq/backend && npm run typecheck -w @arq/frontend",
+    "lint": "npm run lint -w @arq/frontend",
+    "lint:content": "node scripts/run-python.mjs scripts/lint_content.py .",
+    "seed": "node scripts/validate-data.mjs",
+    "check:hex": "node scripts/check-hex.mjs",
+    "check:build": "node scripts/check-build.mjs",
+    "og": "node scripts/make-og.mjs",
+    "logo": "node scripts/make-logo.mjs",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "3.9.10"
+  }
+}

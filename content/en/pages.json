@@ -1,0 +1,217 @@
+{
+  "home": {
+    "principlesHeading": "Honest by design",
+    "principles": [
+      {
+        "title": "Read-only by design",
+        "text": "The Tally connection only reads. It cannot change your books."
+      },
+      {
+        "title": "You press send",
+        "text": "Reminders and messages are drafts. Nothing goes to your customers unless you send it."
+      },
+      {
+        "title": "We say what is not built",
+        "text": "Every product shows whether it is live, in development or planned. No invented numbers, no borrowed logos."
+      },
+      {
+        "title": "Your language",
+        "text": "English, Hindi, Marathi and Gujarati, so the whole team can use it."
+      }
+    ],
+    "faqHeading": "Questions owners ask first",
+    "faq": [
+      {
+        "q": "Do I need to change my accounting software?",
+        "a": "No. ARQ reads from Tally. It does not replace it."
+      },
+      {
+        "q": "What can I try today?",
+        "a": "ARQ Astra and ARQ Yantra are live and come with a free 14-day trial. ARQ Digital Twin and ARQ Dravya are in development. ARQ DineAstra is planned."
+      },
+      {
+        "q": "What does it cost?",
+        "a": "Pricing is on enquiry. Message us and we will quote for your company or plant."
+      },
+      {
+        "q": "Can ARQ build something specific to my factory?",
+        "a": "Yes. We build small custom apps for one process at a time. See Custom apps."
+      },
+      {
+        "q": "Who is ARQ for?",
+        "a": "Manufacturers and MSMEs in India, especially in GIDC and MIDC estates, who keep their books in Tally and their machine records on paper or in Excel."
+      }
+    ],
+    "seo": {
+      "title": "ARQ ONE AI Labs | AI for Indian factories and MSMEs",
+      "description": "ARQ Astra reads your Tally data. ARQ Yantra tracks machines. Tax, plant and restaurant tools are in development. Start a 14-day free trial.",
+      "keywords": [
+        "AI for Indian factories",
+        "Tally AI dashboard",
+        "MSME software India",
+        "GIDC MIDC software"
+      ]
+    }
+  },
+  "productsPage": {
+    "heading": "Products",
+    "sub": "Two are live today. Three are on the way, and we label each one honestly.",
+    "system": {
+      "label": "How the products relate",
+      "today": "Today",
+      "connected": "Where it is going",
+      "captionToday": "Today each product works on its own, with its own data.",
+      "captionConnected": "Over time the products will connect through the ARQ core and share context, so what one knows the others can use. This is where we are heading, not a live feature yet.",
+      "core": "Shared context"
+    },
+    "tilesHeading": "What each one does",
+    "tilesSub": "A small window into each product, on fictional data. Open one to see it in full.",
+    "compareHeading": "At a glance",
+    "compareColumns": [
+      "Product",
+      "For",
+      "Status",
+      "Try it"
+    ],
+    "seo": {
+      "title": "Products | ARQ ONE AI Labs",
+      "description": "ARQ Astra, ARQ Yantra, ARQ Digital Twin, ARQ DineAstra and ARQ Dravya. See what is live and what is coming.",
+      "keywords": [
+        "ARQ products",
+        "Tally analytics",
+        "machine maintenance",
+        "GST reconciliation"
+      ]
+    }
+  },
+  "customApps": {
+    "heading": "Custom apps",
+    "intro": "Some processes are too specific for a product. We build small, focused apps for one process at a time, and we hand them over in a form your team can run.",
+    "patternsHeading": "Patterns we work with",
+    "patterns": [
+      {
+        "title": "Paper to record",
+        "text": "Photograph a shop-floor register or sheet, let the software read it, have a person confirm the unsure fields, then run fixed checks on the result. Built as a prototype for a material-tracking workflow."
+      },
+      {
+        "title": "People and wages",
+        "text": "Track contractors or employees, their attendance, advances and payments, in Indian languages. In progress as a parallel project."
+      },
+      {
+        "title": "A dashboard over what you already keep",
+        "text": "Excel, Tally or another ERP export turned into the five numbers you check every day."
+      }
+    ],
+    "processHeading": "How a custom build runs",
+    "process": [
+      {
+        "title": "Talk",
+        "text": "A short call or WhatsApp chat about the process that hurts."
+      },
+      {
+        "title": "Scope one journey",
+        "text": "We write down one start and one end, and what is not included."
+      },
+      {
+        "title": "See a demo on sample data",
+        "text": "You see it working before you share any real records."
+      },
+      {
+        "title": "Pilot in your factory",
+        "text": "Your team uses it on real work, and we fix what breaks."
+      },
+      {
+        "title": "Handover",
+        "text": "Documentation and a walkthrough, so you are not dependent on us for every change."
+      }
+    ],
+    "honestNote": "We will tell you early if your idea is better served by a spreadsheet or an existing product.",
+    "cta": "Discuss a custom app",
+    "seo": {
+      "title": "Custom apps for factories and MSMEs | ARQ ONE AI Labs",
+      "description": "Small, focused custom apps for one process at a time: paper registers to records, contractor and wage tracking, dashboards over Excel or Tally.",
+      "keywords": [
+        "custom software for factory",
+        "MSME custom app India",
+        "paper register digitisation"
+      ]
+    }
+  },
+  "partners": {
+    "heading": "Sell ARQ with us",
+    "intro": "If you know factory owners, Tally users or accounts teams, you can help them find ARQ and earn a commission when they sign.",
+    "whoHeading": "Who this is for",
+    "who": [
+      "Tally partners and resellers",
+      "CAs and tax advisers",
+      "Consultants and industry experts",
+      "Anyone with trusted connections in factory estates"
+    ],
+    "howHeading": "How it works",
+    "how": [
+      {
+        "title": "You introduce",
+        "text": "Share the people who could use ARQ. We take it from there."
+      },
+      {
+        "title": "We onboard and support",
+        "text": "We run the demo, the trial, the set-up and the support."
+      },
+      {
+        "title": "You earn",
+        "text": "A commission for an agreed period on each customer you bring."
+      }
+    ],
+    "termsNote": "There is one partner model for everyone. Terms are set in a signed partner agreement.",
+    "cta": "Request partner details",
+    "seo": {
+      "title": "Become an ARQ selling partner | ARQ ONE AI Labs",
+      "description": "Tally partners, CAs and consultants can introduce ARQ to factories and earn a commission. One partner model, terms in a signed agreement.",
+      "keywords": [
+        "Tally partner program",
+        "software reseller India MSME",
+        "CA referral partner"
+      ]
+    }
+  },
+  "about": {
+    "heading": "A small team building practical AI for Indian industry",
+    "paragraphs": [
+      "ARQ ONE AI Labs builds software for Indian manufacturers and MSMEs. We start from the records a business already keeps, like Tally books, machine registers and paper sheets, and turn them into answers an owner can act on.",
+      "We started with the Tally data of factories in the GIDC and MIDC belts, because that is where the questions are most practical: who has not paid, what is stuck, what is about to break.",
+      "We keep answers short and put the answer before the table. We label what is live, what is in development and what is only planned. And we build for the languages the team actually speaks."
+    ],
+    "principlesHeading": "How we work",
+    "principles": [
+      {
+        "title": "First principles",
+        "text": "We go back to the actual problem, not the nearest template."
+      },
+      {
+        "title": "Answers first",
+        "text": "The number and what to do about it come before the detail."
+      },
+      {
+        "title": "Honest status",
+        "text": "Live, in development or planned. Always said plainly."
+      }
+    ],
+    "seo": {
+      "title": "About | ARQ ONE AI Labs",
+      "description": "ARQ ONE AI Labs builds practical AI software for Indian manufacturers and MSMEs, starting from the records they already keep.",
+      "keywords": [
+        "ARQ ONE AI Labs",
+        "AI software Vapi Gujarat"
+      ]
+    }
+  },
+  "contactPage": {
+    "seo": {
+      "title": "Contact | ARQ ONE AI Labs",
+      "description": "Message ARQ on WhatsApp or send an enquiry. We will tell you honestly which product fits your business.",
+      "keywords": [
+        "contact ARQ ONE AI Labs"
+      ]
+    }
+  }
+}

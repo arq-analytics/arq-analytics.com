@@ -1,0 +1,8 @@
+node_modules
+.next
+content
+data
+docs
+assets
+*.md
+package-lock.json

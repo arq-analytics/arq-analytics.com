@@ -1,0 +1,316 @@
+{
+  "_comment": "Fictional sample data for product mockups on the website. Every mockup built from this file must show a visible 'Sample data' badge (kind sample) or 'Concept, not live' badge (kind concept). Totals are computed in code from the rows. Never hard-code a total.",
+  "company": "Sample Industries Pvt Ltd",
+  "currency": "INR",
+  "astra": {
+    "question": "Which customers are overdue by more than 45 days?",
+    "overdueThresholdDays": 45,
+    "receivables": [
+      {
+        "party": "Party A (sample)",
+        "invoice": "INV-2041",
+        "amount": 482500,
+        "daysOverdue": 72
+      },
+      {
+        "party": "Party B (sample)",
+        "invoice": "INV-2077",
+        "amount": 126000,
+        "daysOverdue": 58
+      },
+      {
+        "party": "Party C (sample)",
+        "invoice": "INV-2093",
+        "amount": 310400,
+        "daysOverdue": 49
+      },
+      {
+        "party": "Party D (sample)",
+        "invoice": "INV-2110",
+        "amount": 88750,
+        "daysOverdue": 31
+      },
+      {
+        "party": "Party E (sample)",
+        "invoice": "INV-2118",
+        "amount": 214000,
+        "daysOverdue": 22
+      },
+      {
+        "party": "Party F (sample)",
+        "invoice": "INV-2131",
+        "amount": 59900,
+        "daysOverdue": 9
+      }
+    ],
+    "reminderDraft": "Namaste, this is a reminder from Sample Industries. Invoice INV-2041 for the amount due is pending. Please share the payment date. Thank you.",
+    "msmeAlerts": [
+      {
+        "supplier": "Supplier P (sample)",
+        "invoice": "BILL-318",
+        "amount": 96000,
+        "daysSinceInvoice": 41
+      },
+      {
+        "supplier": "Supplier Q (sample)",
+        "invoice": "BILL-322",
+        "amount": 184000,
+        "daysSinceInvoice": 47
+      }
+    ],
+    "deadStock": [
+      {
+        "item": "Item X (sample)",
+        "valueLocked": 142000,
+        "daysNoMovement": 210
+      },
+      {
+        "item": "Item Y (sample)",
+        "valueLocked": 67500,
+        "daysNoMovement": 165
+      }
+    ]
+  },
+  "yantra": {
+    "machines": [
+      {
+        "id": "M-01",
+        "name": "Press 3",
+        "state": "down",
+        "lastIssue": "Motor overheating",
+        "nextServiceInDays": 4
+      },
+      {
+        "id": "M-02",
+        "name": "Lathe 2",
+        "state": "running",
+        "lastIssue": "Belt broken",
+        "nextServiceInDays": -3
+      },
+      {
+        "id": "M-03",
+        "name": "Chiller 1",
+        "state": "running",
+        "lastIssue": "Leakage",
+        "nextServiceInDays": 12
+      },
+      {
+        "id": "M-04",
+        "name": "CNC 1",
+        "state": "running",
+        "lastIssue": null,
+        "nextServiceInDays": 21
+      },
+      {
+        "id": "M-05",
+        "name": "Compressor A",
+        "state": "running",
+        "lastIssue": null,
+        "nextServiceInDays": 2
+      }
+    ],
+    "voiceLog": [
+      {
+        "lang": "hi",
+        "transcript": "प्रेस 3 की मोटर गरम हो रही है, सुबह 10:40 पर बंद किया।",
+        "parsed": {
+          "machine": "Press 3",
+          "issue": "Motor overheating",
+          "stoppedAt": "10:40"
+        }
+      },
+      {
+        "lang": "mr",
+        "transcript": "लेथ 2 चा बेल्ट तुटला, दुपारी 2:15 ला थांबवले.",
+        "parsed": {
+          "machine": "Lathe 2",
+          "issue": "Belt broken",
+          "stoppedAt": "14:15"
+        }
+      },
+      {
+        "lang": "gu",
+        "transcript": "ચિલર 1 માં લીકેજ છે, સવારે 9:05 વાગ્યે બંધ કર્યું.",
+        "parsed": {
+          "machine": "Chiller 1",
+          "issue": "Leakage",
+          "stoppedAt": "09:05"
+        }
+      }
+    ]
+  },
+  "digitalTwin": {
+    "sections": [
+      {
+        "name": "Line 1",
+        "machines": [
+          {
+            "name": "Press 3",
+            "state": "down"
+          },
+          {
+            "name": "Press 4",
+            "state": "running"
+          }
+        ]
+      },
+      {
+        "name": "Line 2",
+        "machines": [
+          {
+            "name": "Lathe 2",
+            "state": "running"
+          },
+          {
+            "name": "CNC 1",
+            "state": "running"
+          }
+        ]
+      }
+    ]
+  },
+  "dravya": {
+    "reconciliation": [
+      {
+        "supplier": "Supplier A (sample)",
+        "invoice": "S-1001",
+        "itc": 18000,
+        "match": "matched"
+      },
+      {
+        "supplier": "Supplier B (sample)",
+        "invoice": "S-2210",
+        "itc": 45000,
+        "match": "supplierNotFiled"
+      },
+      {
+        "supplier": "Supplier C (sample)",
+        "invoice": "S-0877",
+        "itc": 12600,
+        "match": "mismatch"
+      },
+      {
+        "supplier": "Supplier D (sample)",
+        "invoice": "S-3302",
+        "itc": 27000,
+        "match": "missingIn2B"
+      }
+    ]
+  },
+  "showcase": {
+    "_comment": "Extra fictional rows for the app-view showcase. Same rules as the rest of this file: sample data, totals computed in code.",
+    "astra": {
+      "months": [
+        {
+          "month": "Apr",
+          "sales": 2840000,
+          "purchases": 1720000,
+          "expenses": 410000
+        },
+        {
+          "month": "May",
+          "sales": 3110000,
+          "purchases": 1890000,
+          "expenses": 395000
+        },
+        {
+          "month": "Jun",
+          "sales": 2960000,
+          "purchases": 1810000,
+          "expenses": 430000
+        },
+        {
+          "month": "Jul",
+          "sales": 3420000,
+          "purchases": 2050000,
+          "expenses": 452000
+        },
+        {
+          "month": "Aug",
+          "sales": 3275000,
+          "purchases": 1990000,
+          "expenses": 441000
+        },
+        {
+          "month": "Sep",
+          "sales": 3690000,
+          "purchases": 2210000,
+          "expenses": 468000
+        }
+      ],
+      "customerSearch": {
+        "query": "Party A (sample)"
+      },
+      "supplierSearch": {
+        "query": "Supplier Q (sample)"
+      }
+    },
+    "yantra": {
+      "downtimeHours": [
+        {
+          "machine": "Press 3",
+          "hours": 18
+        },
+        {
+          "machine": "Lathe 2",
+          "hours": 11
+        },
+        {
+          "machine": "Chiller 1",
+          "hours": 6
+        },
+        {
+          "machine": "CNC 1",
+          "hours": 2
+        },
+        {
+          "machine": "Compressor A",
+          "hours": 0
+        }
+      ]
+    }
+  },
+  "dineastra": {
+    "_comment": "Concept window only. DineAstra is planned; every number here is fictional.",
+    "outlet": "Sample Kitchen (sample)",
+    "day": {
+      "sales": 84500,
+      "purchases": 31200,
+      "wastage": 2350
+    },
+    "wastage": [
+      {
+        "item": "Cooked rice",
+        "qty": "4 kg",
+        "value": 320
+      },
+      {
+        "item": "Cut vegetables",
+        "qty": "6 kg",
+        "value": 480
+      },
+      {
+        "item": "Paneer",
+        "qty": "1.5 kg",
+        "value": 540
+      }
+    ],
+    "vendorDues": [
+      {
+        "vendor": "Vegetable vendor (sample)",
+        "amount": 9650,
+        "dueInDays": 0
+      },
+      {
+        "vendor": "Dairy supplier (sample)",
+        "amount": 18400,
+        "dueInDays": 2
+      },
+      {
+        "vendor": "Gas agency (sample)",
+        "amount": 6200,
+        "dueInDays": -3
+      }
+    ]
+  }
+}

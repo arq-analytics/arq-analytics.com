@@ -1,0 +1,23 @@
+{
+  "reviewStatus": "draft, needs legal review before launch. Do not present as final.",
+  "lastUpdated": null,
+  "privacy": {
+    "heading": "Privacy",
+    "sections": [
+      { "title": "What this website collects", "text": "If you send an enquiry we receive the details you type: your name, phone or WhatsApp number, optional email, company, location, interest and message." },
+      { "title": "Why we collect it", "text": "To reply to your enquiry and to tell you about the product you asked about." },
+      { "title": "Analytics", "text": "This site uses privacy-friendly analytics that do not set cookies. We count page views and button clicks, not individuals." },
+      { "title": "How long we keep it", "text": "RETENTION_PERIOD_TO_BE_CONFIRMED" },
+      { "title": "Your requests", "text": "To ask us to correct or delete your enquiry, email the address on the contact page." },
+      { "title": "Product data", "text": "Data that customers sync into ARQ products is covered by the customer agreement, not by this page." }
+    ]
+  },
+  "terms": {
+    "heading": "Terms of use",
+    "sections": [
+      { "title": "About this website", "text": "This website describes ARQ products and their status. Products marked in development or planned are not available and may change." },
+      { "title": "No advice", "text": "Nothing here is tax, legal or financial advice. Confirm filings and decisions with your CA or adviser." },
+      { "title": "Trials and pricing", "text": "Trial and pricing terms are set in the quote or agreement you receive from ARQ." }
+    ]
+  }
+}

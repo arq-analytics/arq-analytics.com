@@ -1,0 +1,55 @@
+# Tests, builds the site as plain files and publishes it to GitHub Pages (arqoneailabs.space)
+# on every push to main. Nothing is published if a test or check fails. See docs/deploy.md.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time. A newer push waits instead of cancelling one that is half published.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Test (content gate, sample data, colours, types, lint, unit tests)
+        run: npm test
+
+      - name: Build the static site
+        run: npm run build:static
+
+      - name: Check the built pages
+        run: npm run check:build
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: ui/frontend/out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

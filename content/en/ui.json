@@ -1,0 +1,279 @@
+{
+  "_status": "source",
+  "meta": {
+    "htmlLang": "en",
+    "dir": "ltr",
+    "name": "English",
+    "nativeName": "English"
+  },
+  "common": {
+    "sampleData": "Sample data",
+    "conceptNotLive": "Concept, not live",
+    "pricingOnEnquiry": "Pricing on enquiry",
+    "englishOnlyNote": "This page is available in English only for now.",
+    "skipToContent": "Skip to content",
+    "language": "Language",
+    "menu": "Menu",
+    "close": "Close",
+    "copy": "Copy",
+    "copied": "Copied",
+    "mainNav": "Main navigation",
+    "footerNav": "Footer",
+    "home": "ARQ ONE AI Labs home",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "chatOnWhatsapp": "Chat on WhatsApp",
+    "seeDetails": "See details",
+    "breadcrumb": "Breadcrumb",
+    "fictionalCaption": "Everything shown here is fictional sample data.",
+    "conceptCaption": "A concept of planned scope. This is not a live product.",
+    "englishOnlyBlock": "English only",
+    "previewDraftLabel": "Content status"
+  },
+  "nav": {
+    "products": "Products",
+    "customApps": "Custom apps",
+    "partners": "Partners",
+    "about": "About",
+    "contact": "Contact",
+    "trial": "Start free trial"
+  },
+  "hero": {
+    "eyebrow": "ARQ ONE AI Labs",
+    "title": "AI that reads your factory's records and tells you what needs attention today.",
+    "sub": "ARQ builds software for Indian manufacturers and MSMEs. It works from the Tally data and shop-floor records you already have, and it answers in English, Hindi, Marathi or Gujarati.",
+    "ctaTrial": "Start 14-day free trial",
+    "ctaWhatsapp": "Talk on WhatsApp"
+  },
+  "proof": [
+    "Read-only Tally connection",
+    "Four languages",
+    "Reminders are drafts. You press send.",
+    "Pricing on enquiry"
+  ],
+  "products": {
+    "heading": "Products",
+    "sub": "Start with the one that fixes today's problem.",
+    "trialNote": "We set up your trial with you on WhatsApp or a call.",
+    "status": {
+      "live": "Live",
+      "earlyAccess": "Early access",
+      "inDevelopment": "In development",
+      "planned": "Planned"
+    },
+    "cta": {
+      "trial": "Start 14-day free trial",
+      "earlyList": "Join the early list",
+      "learnMore": "See details"
+    },
+    "cards": {
+      "astra": {
+        "domain": "Money",
+        "tagline": "Your Tally, explained.",
+        "oneLine": "Connects to TallyPrime and shows who owes you, what stock is stuck and which MSME payments are due. Ask questions in your own language."
+      },
+      "yantra": {
+        "domain": "Machines",
+        "tagline": "Every machine accounted for.",
+        "oneLine": "Register every machine, log breakdowns by voice and see what maintenance is due. Works in Indian languages."
+      },
+      "digitalTwin": {
+        "domain": "Plant",
+        "tagline": "One live picture of the whole plant.",
+        "oneLine": "Machines, material and money in one view. In development."
+      },
+      "dineastra": {
+        "domain": "Restaurants and hotels",
+        "tagline": "The daily numbers of a restaurant or hotel.",
+        "oneLine": "Planned. If you run a restaurant or hotel, tell us what you need and we will tell you honestly where we are."
+      },
+      "dravya": {
+        "domain": "Tax",
+        "tagline": "Keep your supplier GST credit safe.",
+        "oneLine": "Matches your purchases against GSTR-2B so you see which supplier credits are at risk before you claim them. In development."
+      }
+    }
+  },
+  "how": {
+    "heading": "How it starts",
+    "steps": [
+      {
+        "title": "Tell us what you run",
+        "text": "Message us on WhatsApp. We will tell you honestly which product fits, or that none does."
+      },
+      {
+        "title": "Try it for 14 days",
+        "text": "ARQ Astra and ARQ Yantra have a free 14-day trial."
+      },
+      {
+        "title": "Decide with your own data",
+        "text": "See your own numbers before you pay. Pricing is quoted on enquiry."
+      }
+    ]
+  },
+  "productPage": {
+    "breadcrumbProducts": "Products",
+    "problem": "The problem",
+    "whatWorks": "What works today",
+    "comingNext": "Coming next",
+    "plannedScope": "Planned scope",
+    "steps": "How it works",
+    "worksWith": "Works with",
+    "faq": "Questions",
+    "related": "Other products",
+    "whyNotYet": "Why not yet",
+    "notThis": "What this is not",
+    "trialFor": "{days}-day free trial"
+  },
+  "customApps": {
+    "heading": "Need something we do not sell yet?",
+    "text": "We build small, focused apps for one process in your factory. We agree one journey, show a working demo on sample data first, then build it.",
+    "cta": "Discuss a custom app"
+  },
+  "contact": {
+    "heading": "Let us talk",
+    "sub": "WhatsApp is the fastest. If you prefer the form, we will reply there too.",
+    "subDirect": "WhatsApp is the fastest. You can also call or email us.",
+    "labels": {
+      "name": "Your name",
+      "phone": "Phone or WhatsApp number",
+      "email": "Email (optional)",
+      "company": "Company",
+      "location": "City or industrial estate",
+      "interest": "Interested in",
+      "role": "I am a",
+      "message": "What would you like to solve?",
+      "consent": "You may contact me about this enquiry on the number above.",
+      "submit": "Send enquiry",
+      "whatsapp": "Message on WhatsApp"
+    },
+    "roles": {
+      "owner": "Factory or business owner",
+      "accounts": "Accounts or finance",
+      "tallyPartner": "Tally partner or reseller",
+      "ca": "CA or tax adviser",
+      "other": "Other"
+    },
+    "interests": {
+      "astra": "ARQ Astra",
+      "yantra": "ARQ Yantra",
+      "digitalTwin": "ARQ Digital Twin",
+      "dineastra": "ARQ DineAstra",
+      "dravya": "ARQ Dravya (tax)",
+      "custom": "A custom app",
+      "partner": "Becoming a selling partner",
+      "other": "Something else"
+    },
+    "success": "Thank you. We have your enquiry and will reply on WhatsApp or phone.",
+    "error": "We could not send this. Please message us on WhatsApp instead.",
+    "required": "Required",
+    "optional": "Optional",
+    "choose": "Choose one",
+    "sending": "Sending",
+    "successHeading": "Enquiry received",
+    "errorHeading": "Not sent",
+    "cardHeading": "Reach us directly",
+    "phone": "Phone",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "whatsappFallback": "Message on WhatsApp instead",
+    "fallbackMessage": "Hello ARQ, I am {name}. I am interested in: {interest}. {message}",
+    "errors": {
+      "name": "Please enter your name, 2 to 80 characters.",
+      "phone": "Please enter a 10-digit Indian mobile number.",
+      "email": "Please enter a valid email address.",
+      "company": "Please shorten the company name.",
+      "location": "Please shorten the location.",
+      "interest": "Please choose one.",
+      "role": "Please choose one.",
+      "intent": "Please choose one.",
+      "message": "Please keep this under 1000 characters.",
+      "consent": "Please tick this so we may reply."
+    }
+  },
+  "footer": {
+    "tagline": "AI software for Indian factories and MSMEs.",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "company": "Company",
+    "contactHeading": "Contact",
+    "language": "Language"
+  },
+  "mockup": {
+    "question": "Question",
+    "facts": {
+      "parties": "Parties over {days} days",
+      "overdue": "Total overdue",
+      "oldest": "Oldest invoice"
+    },
+    "days": "{n} days",
+    "table": {
+      "party": "Party",
+      "invoice": "Invoice",
+      "amount": "Amount",
+      "daysOverdue": "Days overdue"
+    },
+    "reminder": {
+      "title": "Reminder draft",
+      "note": "A draft. You copy it and send it yourself."
+    },
+    "machineState": {
+      "running": "Running",
+      "down": "Down"
+    },
+    "service": {
+      "overdue": "Service overdue by {n} days",
+      "dueIn": "Service due in {n} days"
+    },
+    "machineTable": {
+      "machine": "Machine",
+      "state": "State",
+      "lastIssue": "Last issue",
+      "service": "Next service"
+    },
+    "noIssue": "No issue logged",
+    "voice": {
+      "heading": "Voice log",
+      "said": "Said",
+      "recorded": "Recorded",
+      "machine": "Machine",
+      "issue": "Issue",
+      "stoppedAt": "Stopped at",
+      "languages": {
+        "hi": "Hindi",
+        "mr": "Marathi",
+        "gu": "Gujarati"
+      }
+    },
+    "twin": {
+      "heading": "Plant view (concept)"
+    },
+    "dravya": {
+      "heading": "GSTR-2B matching (concept)",
+      "table": {
+        "supplier": "Supplier",
+        "invoice": "Invoice",
+        "credit": "Credit",
+        "match": "Status"
+      },
+      "match": {
+        "matched": "Matched",
+        "supplierNotFiled": "Supplier not filed",
+        "mismatch": "Mismatch",
+        "missingIn2B": "Missing in GSTR-2B"
+      },
+      "atRisk": "Credit at risk"
+    }
+  },
+  "finalCta": {
+    "heading": "Tell us what you run.",
+    "text": "Message us and we will say honestly which product fits, or that none does."
+  },
+  "notFound": {
+    "title": "We could not find that page.",
+    "text": "The link may be old or mistyped.",
+    "home": "Go to home",
+    "whatsapp": "Message us on WhatsApp"
+  }
+}

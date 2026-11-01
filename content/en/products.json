@@ -1,0 +1,187 @@
+{
+  "_comment": "Product catalogue. Order here is display order. status drives every CTA and every claim. Do not add capability verbs in present tense to a product whose status is not live. See docs/specs/003-content-contract.md.",
+  "products": [
+    {
+      "id": "astra",
+      "slug": "astra",
+      "name": "ARQ Astra",
+      "domain": "Money",
+      "status": "live",
+      "tagline": "Your Tally, explained.",
+      "oneLine": "Connects to TallyPrime and shows who owes you, what stock is stuck and which MSME payments are due. Ask questions in your own language.",
+      "audience": "Owners and accounts teams who run TallyPrime.",
+      "problem": "Your Tally holds the answers, but getting them out takes a CA, a spreadsheet or a free evening. Money sits with customers, stock sits on shelves, and payments to small suppliers run past the 45-day limit.",
+      "featuresLive": [
+        { "title": "Receivables ageing", "text": "See who owes you, how much and for how long, from Tally or an Excel upload." },
+        { "title": "Reminder drafts", "text": "Get a ready message for each overdue party. You copy it into WhatsApp and send it yourself. ARQ never sends on its own." },
+        { "title": "MSME 45-day alert", "text": "Know which payments to micro and small suppliers are close to, or past, the 45-day limit." },
+        { "title": "Dead stock", "text": "See stock items that have not moved, so you can act before more money gets stuck." },
+        { "title": "Owner daily brief", "text": "A short summary of what needs attention today." }
+      ],
+      "featuresNext": [
+        { "title": "Statutory calendar", "text": "MSME payments, ROC filings, pollution board returns and labour code deadlines in one list." },
+        { "title": "Daily brief on WhatsApp", "text": "The owner brief delivered where you already read your messages." },
+        { "title": "Marg ERP as a second data source", "text": "In progress." }
+      ],
+      "steps": [
+        { "title": "Install the connector", "text": "Put the small ARQ app on the Windows PC where Tally runs. It reads from Tally and does not write to it." },
+        { "title": "See your numbers", "text": "Your data appears on your dashboard, with a daily brief on what needs attention." },
+        { "title": "Ask in your language", "text": "Ask in English, Hindi, Marathi or Gujarati, for example which customers have not paid in 45 days." }
+      ],
+      "worksWith": ["TallyPrime", "Excel upload"],
+      "faq": [
+        { "q": "Does ARQ change my Tally data?", "a": "No. The connector only reads from Tally." },
+        { "q": "Does it message my customers by itself?", "a": "No. Reminders are drafts. You copy them and send them yourself." },
+        { "q": "Which languages does it support?", "a": "English, Hindi, Marathi and Gujarati." },
+        { "q": "What do I need to install?", "a": "A small Windows app on the PC where Tally runs." },
+        { "q": "Where is my data kept?", "a": "Your Tally data is synced to ARQ's cloud so the dashboard can show it. Ask us for the current hosting details and we will share them in writing." },
+        { "q": "What does it cost?", "a": "Pricing is on enquiry. There is a free 14-day trial." }
+      ],
+      "mockup": { "kind": "sample", "ref": "astra" },
+      "seo": {
+        "title": "ARQ Astra: AI for your Tally data | ARQ ONE AI Labs",
+        "description": "Receivables ageing, MSME 45-day alerts, dead stock and a daily brief from your TallyPrime data. English, Hindi, Marathi and Gujarati. 14-day free trial.",
+        "keywords": ["Tally dashboard", "Tally receivables ageing", "MSME 45 day payment alert", "Tally AI", "dead stock report Tally"]
+      }
+    },
+    {
+      "id": "yantra",
+      "slug": "yantra",
+      "name": "ARQ Yantra",
+      "domain": "Machines",
+      "status": "live",
+      "tagline": "Every machine accounted for.",
+      "oneLine": "Register every machine, log breakdowns by voice and see what maintenance is due. Works in Indian languages.",
+      "audience": "Plant owners, supervisors and maintenance teams.",
+      "problem": "Machine details live in a supervisor's head or a register. Breakdowns are remembered, not recorded, and maintenance is missed until something stops.",
+      "featuresLive": [
+        { "title": "Easy machine onboarding", "text": "Add machines from an Excel sheet, a photo of the nameplate, or by speaking." },
+        { "title": "Voice breakdown and downtime log", "text": "Say what happened in your own language. ARQ writes the log entry." },
+        { "title": "Maintenance due list", "text": "See which machines are due for service and which are overdue." },
+        { "title": "Daily brief", "text": "A short summary of breakdowns and maintenance due." }
+      ],
+      "featuresNext": [
+        { "title": "More ways to capture machine data", "text": "We are working on more capture options. Tell us what your plant needs." }
+      ],
+      "steps": [
+        { "title": "Add your machines", "text": "Upload an Excel sheet, photograph the nameplate, or say the details out loud." },
+        { "title": "Log breakdowns by voice", "text": "Speak in your language. The entry, the machine and the time are recorded for you." },
+        { "title": "Act on the due list", "text": "Check the maintenance due list and the daily brief each morning." }
+      ],
+      "worksWith": ["Excel upload", "Nameplate photo", "Voice in Indian languages"],
+      "faq": [
+        { "q": "Do I need sensors on my machines?", "a": "No. Machines are logged by people, by voice or from a sheet." },
+        { "q": "Which languages can I speak?", "a": "Indian languages including Hindi, Marathi and Gujarati, and English." },
+        { "q": "Is it only for supervisors?", "a": "It is built for anyone in a plant with machines to look after: owners, supervisors and maintenance staff." },
+        { "q": "What does it cost?", "a": "Pricing is on enquiry. There is a free 14-day trial." }
+      ],
+      "mockup": { "kind": "sample", "ref": "yantra" },
+      "seo": {
+        "title": "ARQ Yantra: machine register and maintenance log | ARQ ONE AI Labs",
+        "description": "Register machines from Excel, a nameplate photo or voice. Log breakdowns in Hindi, Marathi or Gujarati and see maintenance due. 14-day free trial.",
+        "keywords": ["machine maintenance software India", "breakdown log voice", "factory machine register", "preventive maintenance MSME"]
+      }
+    },
+    {
+      "id": "digitalTwin",
+      "slug": "digital-twin",
+      "name": "ARQ Digital Twin",
+      "domain": "Plant",
+      "status": "inDevelopment",
+      "tagline": "One live picture of the whole plant.",
+      "oneLine": "Machines, material and money in one view. In development.",
+      "audience": "Plant owners who want machines, material and money in one place.",
+      "problem": "Today a plant is understood in pieces: money in Tally, machines in a register, material on paper. Nobody sees them together until something goes wrong.",
+      "featuresLive": [],
+      "featuresNext": [
+        { "title": "A plant view", "text": "Machines shown by line or section with their latest status." },
+        { "title": "Money next to machines", "text": "Costs and receivables from ARQ Astra shown beside what the machines did." },
+        { "title": "One place for questions", "text": "Ask about the plant in your own language." }
+      ],
+      "plannedNote": "Planned scope, subject to change.",
+      "whyNotYet": "We build in order: the records first, the picture second. Digital Twin depends on the data from ARQ Astra and ARQ Yantra, so it follows them.",
+      "steps": [],
+      "worksWith": [],
+      "faq": [
+        { "q": "Is it available now?", "a": "No. It is in development. You can join the early list and we will tell you when there is something real to try." },
+        { "q": "Will it need new hardware?", "a": "We will say so plainly once the design is settled. Ask us and we will share where we are." }
+      ],
+      "mockup": { "kind": "concept", "ref": "digitalTwin" },
+      "seo": {
+        "title": "ARQ Digital Twin: a live view of your plant | ARQ ONE AI Labs",
+        "description": "In development: one view of machines, material and money for Indian factories. Join the early list.",
+        "keywords": ["digital twin MSME factory", "plant dashboard India"]
+      }
+    },
+    {
+      "id": "dineastra",
+      "slug": "dineastra",
+      "name": "ARQ DineAstra",
+      "domain": "Restaurants and hotels",
+      "status": "planned",
+      "tagline": "The daily numbers of a restaurant or hotel.",
+      "oneLine": "Planned. If you run a restaurant or hotel, tell us what you need and we will tell you honestly where we are.",
+      "audience": "Restaurant and hotel owners.",
+      "problem": "Sales, purchases, wastage and vendor dues are spread across a billing system, notebooks and WhatsApp. The owner finds out how the day went the next morning, if at all.",
+      "featuresLive": [],
+      "featuresNext": [
+        { "title": "Daily sales and purchase summary", "text": "One short view of how the day went." },
+        { "title": "Stock and wastage", "text": "What came in, what was used, what was thrown away." },
+        { "title": "Vendor dues", "text": "Who you owe and when, with reminder drafts you send yourself." }
+      ],
+      "plannedNote": "Planned scope, subject to change.",
+      "whyNotYet": "We are shaping this with the first few owners. What you check every night decides what we build first.",
+      "steps": [],
+      "worksWith": [],
+      "faq": [
+        { "q": "Is it available now?", "a": "No. It is planned. Tell us what you run and what you check every night, and we will tell you honestly whether we can help yet." }
+      ],
+      "mockup": { "kind": "concept", "ref": "dineastra" },
+      "seo": {
+        "title": "ARQ DineAstra: restaurant and hotel operations | ARQ ONE AI Labs",
+        "description": "Planned: daily sales, stock, wastage and vendor dues for restaurants and hotels. Tell us what you need.",
+        "keywords": ["restaurant operations software India", "hotel daily report app"]
+      }
+    },
+    {
+      "id": "dravya",
+      "slug": "dravya",
+      "name": "ARQ Dravya",
+      "domain": "Tax",
+      "status": "inDevelopment",
+      "tagline": "Keep your supplier GST credit safe.",
+      "oneLine": "Matches your purchases against GSTR-2B so you see which supplier credits are at risk before you claim them. In development.",
+      "audience": "Owners, accounts teams and CAs who handle GST for manufacturers.",
+      "problem": "Your input tax credit depends on your suppliers filing correctly. If a supplier does not file, your credit can be at risk, and finding out late is expensive.",
+      "featuresLive": [],
+      "featuresNext": [
+        { "title": "GSTR-2B matching", "text": "Match your purchase records from Tally against what suppliers have filed." },
+        { "title": "Supplier risk list", "text": "See which suppliers have not filed, or filed differently, before you claim the credit." },
+        { "title": "A clean report for your CA", "text": "One clear list of mismatches, so your CA does not start from zero." }
+      ],
+      "plannedNote": "Planned scope, subject to change.",
+      "whyNotYet": "It reads the same Tally data as ARQ Astra, so it is built on the same foundation.",
+      "notThis": "Dravya is not a billing app and does not replace your CA. It reads the data you already keep.",
+      "disclaimer": "ARQ is software, not a tax adviser. Confirm filings with your CA.",
+      "steps": [],
+      "worksWith": ["TallyPrime"],
+      "faq": [
+        { "q": "Is it available now?", "a": "No. It is in development. You can join the early list." },
+        { "q": "Will it file my returns?", "a": "No. The aim is to show you the risk before you file. Filing stays with you and your CA." }
+      ],
+      "mockup": { "kind": "concept", "ref": "dravya" },
+      "seo": {
+        "title": "ARQ Dravya: GST credit matching against GSTR-2B | ARQ ONE AI Labs",
+        "description": "In development: match your purchases against GSTR-2B and see supplier credit at risk. Built to help CAs, not replace them. Join the early list.",
+        "keywords": ["GSTR-2B reconciliation Tally", "ITC mismatch supplier not filed", "GST reconciliation MSME"]
+      }
+    }
+  ],
+  "parked": [
+    {
+      "id": "materialLedger",
+      "enabled": false,
+      "_comment": "Not rendered. Internal notes call this module Dravya IQ (material traceability for recipe-based manufacturers, demo name Shade Ledger). Parked because the brief assigns the Dravya name to tax. If the names are swapped, move this entry into products and rename."
+    }
+  ]
+}
